@@ -288,6 +288,7 @@ function provisioning_download_hf_with_python() {
 import os
 import sys
 from pathlib import Path
+from urllib.parse import unquote
 
 import requests
 
@@ -300,21 +301,58 @@ headers = {}
 if hf_token:
     headers["Authorization"] = f"Bearer {hf_token}"
 
+def decode_filename_from_cd(cd_header: str) -> str | None:
+    if not cd_header:
+        return None
+    parts = [p.strip() for p in cd_header.split(";")]
+    filename_star = None
+    filename_regular = None
+    for part in parts:
+        lower = part.lower()
+        if lower.startswith("filename*="):
+            filename_star = part.split("=", 1)[1].strip().strip('"').strip("'")
+        elif lower.startswith("filename=") and not lower.startswith("filename*="):
+            filename_regular = part.split("=", 1)[1].strip().strip('"').strip("'")
+    # RFC 5987 filename*
+    if filename_star:
+        if "''" in filename_star:
+            _, value = filename_star.split("''", 1)
+        else:
+            value = filename_star
+        name = value
+        while "%" in name:
+            decoded = unquote(name)
+            if decoded == name:
+                break
+            name = decoded
+        return name
+    if filename_regular:
+        name = filename_regular
+        while "%" in name:
+            decoded = unquote(name)
+            if decoded == name:
+                break
+            name = decoded
+        return name
+    return None
+
 # Stream download; allow redirects. Requests will not forward Authorization to a different host.
 with requests.get(url, headers=headers, stream=True, allow_redirects=True, timeout=60) as r:
     r.raise_for_status()
 
-    # Prefer filename from Content-Disposition if present
-    filename = None
     cd = r.headers.get("content-disposition", "")
-    if "filename=" in cd:
-        # naive parse, good enough for our usage
-        parts = cd.split("filename=")
-        if len(parts) > 1:
-            filename = parts[1].strip().strip('"').strip("'").split(";")[0].strip()
+    filename = decode_filename_from_cd(cd)
 
     if not filename:
-        filename = url.split("/")[-1].split("?")[0] or "download.bin"
+        # fall back to URL path
+        path_part = url.split("?", 1)[0]
+        filename = os.path.basename(path_part) or "download.bin"
+        # decode %20 etc.
+        while "%" in filename:
+            decoded = unquote(filename)
+            if decoded == filename:
+                break
+            filename = decoded
 
     out_path = out_dir / filename
     if out_path.exists():
