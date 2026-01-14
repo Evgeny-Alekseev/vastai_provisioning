@@ -307,13 +307,13 @@ function provisioning_download() {
     local dotbytes="${3:-4M}"
     local auth_token=""
 
-    # HuggingFace auth
+    # HuggingFace auth (safe to send Authorization header, even across redirects)
     if [[ -n $HF_TOKEN && $url =~ ^https://([a-zA-Z0-9_-]+\.)?huggingface\.co(/|$|\?) ]]; then
         auth_token="$HF_TOKEN"
-    # Civitai auth
+    # Civitai auth: use token in query string ONLY, no Authorization header
     elif [[ -n $CIVITAI_TOKEN && $url =~ ^https://([a-zA-Z0-9_-]+\.)?civitai\.com(/|$|\?) ]]; then
-        auth_token="$CIVITAI_TOKEN"
-        # Also append ?token=... so it works even if the Authorization header is ignored
+        # Append ?token=... so initial civitai.com request is authenticated,
+        # but we don't leak Authorization header to the R2 redirect host (which can cause 400s).
         if [[ "$url" != *"token="* ]]; then
             if [[ "$url" == *"?"* ]]; then
                 url="${url}&token=${CIVITAI_TOKEN}"
