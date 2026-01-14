@@ -186,6 +186,7 @@ TEXT_ENCODER_MODELS=(
 # All other HF repos will download anonymously
 HF_AUTH_REPOS=(
     "Comfy-Org/Wan_2.2_ComfyUI_Repackaged"
+    "Playtime-AI/Wan2.2-Loras"
     # Add other private/gated HF repos here if needed
     # Example:
     # "SomeOrg/PrivateModel"
