@@ -1,8 +1,8 @@
 {
   "id": "ec7da562-7e21-4dac-a0d2-f4441e1efd3b",
   "revision": 0,
-  "last_node_id": 146,
-  "last_link_id": 260,
+  "last_node_id": 161,
+  "last_link_id": 300,
   "nodes": [
     {
       "id": 38,
@@ -223,59 +223,6 @@
       ]
     },
     {
-      "id": 62,
-      "type": "LoadImage",
-      "pos": [
-        506.29997570051626,
-        3467.966064367301
-      ],
-      "size": [
-        222.798828125,
-        314
-      ],
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "slot_index": 0,
-          "links": [
-            158
-          ]
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "slot_index": 1,
-          "links": null
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.45",
-        "Node name for S&R": "LoadImage",
-        "enableTabs": false,
-        "tabWidth": 65,
-        "tabXOffset": 10,
-        "hasSecondTab": false,
-        "secondTabText": "Send Back",
-        "secondTabOffset": 80,
-        "secondTabWidth": 65,
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.1",
-          "input_ue_unconnectable": {}
-        }
-      },
-      "widgets_values": [
-        "image (19).jpg",
-        "image"
-      ]
-    },
-    {
       "id": 92,
       "type": "LoraLoaderModelOnly",
       "pos": [
@@ -287,7 +234,7 @@
         84.7523896127077
       ],
       "flags": {},
-      "order": 16,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -349,7 +296,7 @@
         84.75238961270725
       ],
       "flags": {},
-      "order": 15,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -411,7 +358,7 @@
         60
       ],
       "flags": {},
-      "order": 29,
+      "order": 31,
       "mode": 0,
       "inputs": [
         {
@@ -463,7 +410,7 @@
         58
       ],
       "flags": {},
-      "order": 30,
+      "order": 32,
       "mode": 0,
       "inputs": [
         {
@@ -515,7 +462,7 @@
         82
       ],
       "flags": {},
-      "order": 27,
+      "order": 29,
       "mode": 4,
       "inputs": [
         {
@@ -555,7 +502,7 @@
         82
       ],
       "flags": {},
-      "order": 26,
+      "order": 28,
       "mode": 4,
       "inputs": [
         {
@@ -595,7 +542,7 @@
         82
       ],
       "flags": {},
-      "order": 23,
+      "order": 25,
       "mode": 4,
       "inputs": [
         {
@@ -635,7 +582,7 @@
         82
       ],
       "flags": {},
-      "order": 24,
+      "order": 26,
       "mode": 4,
       "inputs": [
         {
@@ -675,7 +622,7 @@
         314.0000000000002
       ],
       "flags": {},
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -730,7 +677,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [
         {
@@ -753,7 +700,8 @@
       "properties": {
         "cnr_id": "comfyui-kjnodes",
         "ver": "1.2.4",
-        "Node name for S&R": "WidgetToString"
+        "Node name for S&R": "WidgetToString",
+        "aux_id": "kijai/ComfyUI-KJNodes"
       },
       "widgets_values": [
         67,
@@ -777,7 +725,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -800,7 +748,8 @@
       "properties": {
         "cnr_id": "comfyui-kjnodes",
         "ver": "1.2.4",
-        "Node name for S&R": "WidgetToString"
+        "Node name for S&R": "WidgetToString",
+        "aux_id": "kijai/ComfyUI-KJNodes"
       },
       "widgets_values": [
         67,
@@ -824,7 +773,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -847,7 +796,8 @@
       "properties": {
         "cnr_id": "comfyui-kjnodes",
         "ver": "1.2.4",
-        "Node name for S&R": "WidgetToString"
+        "Node name for S&R": "WidgetToString",
+        "aux_id": "kijai/ComfyUI-KJNodes"
       },
       "widgets_values": [
         67,
@@ -855,53 +805,6 @@
         false,
         "",
         2
-      ]
-    },
-    {
-      "id": 116,
-      "type": "StringSubstring",
-      "pos": [
-        2055.908694625673,
-        2067.750950797451
-      ],
-      "size": [
-        210,
-        136
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 17,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "string",
-          "type": "STRING",
-          "widget": {
-            "name": "string"
-          },
-          "link": 225
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            255
-          ]
-        }
-      ],
-      "title": "to save",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.9.1",
-        "Node name for S&R": "StringSubstring"
-      },
-      "widgets_values": [
-        "",
-        0,
-        41
       ]
     },
     {
@@ -918,7 +821,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 21,
+      "order": 23,
       "mode": 0,
       "inputs": [
         {
@@ -964,7 +867,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 25,
+      "order": 27,
       "mode": 0,
       "inputs": [
         {
@@ -996,249 +899,6 @@
       ]
     },
     {
-      "id": 129,
-      "type": "StringReplace",
-      "pos": [
-        2422.4071781206944,
-        2074.6893993174212
-      ],
-      "size": [
-        400,
-        200
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 28,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "string",
-          "type": "STRING",
-          "widget": {
-            "name": "string"
-          },
-          "link": 230
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            249
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.9.1",
-        "Node name for S&R": "StringReplace"
-      },
-      "widgets_values": [
-        "",
-        " ",
-        "_"
-      ]
-    },
-    {
-      "id": 140,
-      "type": "StringConcatenate",
-      "pos": [
-        2045.4674206604084,
-        2117.0761993531232
-      ],
-      "size": [
-        400,
-        200
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 31,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "string_a",
-          "type": "STRING",
-          "widget": {
-            "name": "string_a"
-          },
-          "link": 249
-        },
-        {
-          "name": "string_b",
-          "type": "STRING",
-          "widget": {
-            "name": "string_b"
-          },
-          "link": 250
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            253
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.9.1",
-        "Node name for S&R": "StringConcatenate"
-      },
-      "widgets_values": [
-        "",
-        "",
-        "-"
-      ]
-    },
-    {
-      "id": 141,
-      "type": "StringConcatenate",
-      "pos": [
-        2187.7659636373833,
-        2121.617642214092
-      ],
-      "size": [
-        400,
-        200
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 33,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "string_a",
-          "type": "STRING",
-          "widget": {
-            "name": "string_a"
-          },
-          "link": 253
-        },
-        {
-          "name": "string_b",
-          "type": "STRING",
-          "widget": {
-            "name": "string_b"
-          },
-          "link": 252
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            258
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.9.1",
-        "Node name for S&R": "StringConcatenate"
-      },
-      "widgets_values": [
-        "",
-        "",
-        "x"
-      ]
-    },
-    {
-      "id": 143,
-      "type": "StringConcatenate",
-      "pos": [
-        2348.2302780582277,
-        2126.15908507506
-      ],
-      "size": [
-        400,
-        200
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 35,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "string_a",
-          "type": "STRING",
-          "widget": {
-            "name": "string_a"
-          },
-          "link": 258
-        },
-        {
-          "name": "string_b",
-          "type": "STRING",
-          "widget": {
-            "name": "string_b"
-          },
-          "link": 257
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            259,
-            260
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.9.1",
-        "Node name for S&R": "StringConcatenate"
-      },
-      "widgets_values": [
-        "",
-        "",
-        "-"
-      ]
-    },
-    {
-      "id": 137,
-      "type": "PreviewAny",
-      "pos": [
-        2237.7218351080255,
-        2195.7945422765583
-      ],
-      "size": [
-        250.87298574870601,
-        112
-      ],
-      "flags": {},
-      "order": 37,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "source",
-          "type": "*",
-          "link": 259
-        }
-      ],
-      "outputs": [],
-      "title": "filename",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.9.1",
-        "Node name for S&R": "PreviewAny"
-      },
-      "widgets_values": [
-        null,
-        null,
-        null
-      ]
-    },
-    {
       "id": 106,
       "type": "CLIPTextEncode",
       "pos": [
@@ -1250,7 +910,7 @@
         164.31304931640625
       ],
       "flags": {},
-      "order": 18,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -1302,36 +962,6 @@
       "bgcolor": "#353"
     },
     {
-      "id": 70,
-      "type": "Note",
-      "pos": [
-        1372.0348185793298,
-        2683.3900778154607
-      ],
-      "size": [
-        340,
-        120
-      ],
-      "flags": {},
-      "order": 9,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "Note: Video Size",
-      "properties": {
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.1",
-          "input_ue_unconnectable": {}
-        }
-      },
-      "widgets_values": [
-        "By default, we set the video to a smaller size for users with low VRAM. If you have enough VRAM, you can change the size"
-      ],
-      "color": "#432",
-      "bgcolor": "#000"
-    },
-    {
       "id": 7,
       "type": "CLIPTextEncode",
       "pos": [
@@ -1343,7 +973,7 @@
         180.6060791015625
       ],
       "flags": {},
-      "order": 14,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -1381,90 +1011,10 @@
         }
       },
       "widgets_values": [
-        "最差质量, 低质量, 整体发灰, 细节模糊不清, 过曝, 色调艳丽, 静态, 静止, 画面, 风格, 作品, 画作, 字幕, 丑陋的, 畸形的, 残缺的, 毁容的, 多余的手指, 画得不好的手部, 画得不好的脸部, 形态畸形的肢体, 手指融合, 三条腿, 杂乱的背景, 背景人很多, 倒着走, 雾, 烟, 静止不动的画面, 薄雾, 朦胧, 烟雾弥漫, 水蒸气, 蒸汽, JPEG压缩残留, worst quality, low quality, bad anatomy, ugly, deformed, blurred details, extra fingers, poorly drawn hands, poorly drawn face, overexposed, oversaturated, static, still, cluttered background, anime, illustration, malformed, disfigured, mutilated, extra limbs, duplicate limbs, fused fingers, overall gray, bright colors, crowded background, talking, speaking, closing eyes, awkward pose, paintings, picture, style, stylized, smoke, fog, mist, haze, JPEG artifacts, JPEG compression residue, subtitles, incomplete, three legs, slow motion, male face, male head, chinese face, walking backwards, upside down, still image, still picture, static motionless frame, fused body, male genitalia, mutated genitals, deformed limbs, deformed penis, grotesque pussy, overlapping vagina, unnatural bulge, deformed crotch, low detail mouth, low detail teeth, low detail tongue, low detail penis, low detail cum, bad physics, bad fluid dynamics, bad physiological reactions, disappearing cum, steam, vapor, a lot of people in the background, camera pan, camera shake, camera tilt, zoom in, zoom out"
+        "жњЂе·®иґЁй‡Џ, дЅЋиґЁй‡Џ, ж•ґдЅ“еЏ‘зЃ°, з»†иЉ‚жЁЎзіЉдёЌжё…, иї‡ж›ќ, и‰Іи°ѓи‰ідёЅ, йќ™жЂЃ, йќ™ж­ў, з”»йќў, йЈЋж ј, дЅње“Ѓ, з”»дЅњ, е­—е№•, дё‘й™‹зљ„, з•ёеЅўзљ„, ж®‹зјєзљ„, жЇЃе®№зљ„, е¤љдЅ™зљ„ж‰‹жЊ‡, з”»еѕ—дёЌеҐЅзљ„ж‰‹йѓЁ, з”»еѕ—дёЌеҐЅзљ„и„ёйѓЁ, еЅўжЂЃз•ёеЅўзљ„и‚ўдЅ“, ж‰‹жЊ‡ићЌеђ€, дё‰жќЎи…ї, жќ‚д№±зљ„иѓЊж™Ї, иѓЊж™Їдєєеѕ€е¤љ, еЂ’зќЂиµ°, й›ѕ, зѓџ, йќ™ж­ўдёЌеЉЁзљ„з”»йќў, и–„й›ѕ, жњ¦иѓ§, зѓџй›ѕејҐжј«, ж°ґи’ёж°”, и’ёж±Ѕ, JPEGеЋ‹зј©ж®‹з•™, worst quality, low quality, bad anatomy, ugly, deformed, blurred details, extra fingers, poorly drawn hands, poorly drawn face, overexposed, oversaturated, static, still, cluttered background, anime, illustration, malformed, disfigured, mutilated, extra limbs, duplicate limbs, fused fingers, overall gray, bright colors, crowded background, talking, speaking, closing eyes, awkward pose, paintings, picture, style, stylized, smoke, fog, mist, haze, JPEG artifacts, JPEG compression residue, subtitles, incomplete, three legs, slow motion, male face, male head, chinese face, walking backwards, upside down, still image, still picture, static motionless frame, fused body, male genitalia, mutated genitals, deformed limbs, deformed penis, grotesque pussy, overlapping vagina, unnatural bulge, deformed crotch, low detail mouth, low detail teeth, low detail tongue, low detail penis, low detail cum, bad physics, bad fluid dynamics, bad physiological reactions, disappearing cum, steam, vapor, a lot of people in the background, camera pan, camera shake, camera tilt, zoom in, zoom out"
       ],
       "color": "#322",
       "bgcolor": "#533"
-    },
-    {
-      "id": 97,
-      "type": "LoraLoaderModelOnly",
-      "pos": [
-        480.2473842095645,
-        2862.6689907902805
-      ],
-      "size": [
-        270,
-        82
-      ],
-      "flags": {},
-      "order": 19,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 186
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            190
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.7.0",
-        "Node name for S&R": "LoraLoaderModelOnly"
-      },
-      "widgets_values": [
-        "23High noise-Cumshot Aesthetics_Aesthetics_high.safetensors",
-        0.7
-      ]
-    },
-    {
-      "id": 98,
-      "type": "LoraLoaderModelOnly",
-      "pos": [
-        876.8609269102053,
-        2858.65232171746
-      ],
-      "size": [
-        270,
-        82
-      ],
-      "flags": {},
-      "order": 20,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 188
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            192
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.7.0",
-        "Node name for S&R": "LoraLoaderModelOnly"
-      },
-      "widgets_values": [
-        "56Low noise-Cumshot Aesthetics_Aesthetics_low.safetensors",
-        0.7
-      ]
     },
     {
       "id": 61,
@@ -1478,7 +1028,7 @@
         562.4080339500604
       ],
       "flags": {},
-      "order": 39,
+      "order": 42,
       "mode": 0,
       "inputs": [
         {
@@ -1520,43 +1070,6 @@
       ]
     },
     {
-      "id": 110,
-      "type": "PrimitiveStringMultiline",
-      "pos": [
-        869.9415430956458,
-        3370.469465353779
-      ],
-      "size": [
-        400,
-        200
-      ],
-      "flags": {},
-      "order": 10,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            225,
-            228
-          ]
-        }
-      ],
-      "title": "Positive prompt",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.9.1",
-        "Node name for S&R": "PrimitiveStringMultiline"
-      },
-      "widgets_values": [
-        "Cum is spreading across the European girl’s face. The man out of frame is cumming on the girl's neck with sticky messy pulsating white translucent cum. Pulsating penis is constantly spurting sticky messy pulsating white translucent cum on the girl's neck. The sticky messy pulsating white translucent cum is splattering across the girl’s forehead and hair and dress all over her forehead and hair and dress.The girl's eyes are constantly open. The girl is playfully sticking out her tongue completely covered in sticky messy white translucent cum. The tongiue is playing with sticky messy white translucent cum. The girl's face looks radiant and beaming and ecstatic. The girl's eyes are always open no matter what happens. The girl remains unblinking whatever happens. Her eyes remain open regardless of the situation. "
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
       "id": 57,
       "type": "KSamplerAdvanced",
       "pos": [
@@ -1570,7 +1083,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 32,
+      "order": 34,
       "mode": 0,
       "inputs": [
         {
@@ -1622,7 +1135,7 @@
       },
       "widgets_values": [
         "enable",
-        827539600053637,
+        943327162489884,
         "randomize",
         4,
         1,
@@ -1647,7 +1160,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 34,
+      "order": 36,
       "mode": 0,
       "inputs": [
         {
@@ -1722,7 +1235,7 @@
         78
       ],
       "flags": {},
-      "order": 38,
+      "order": 40,
       "mode": 0,
       "inputs": [
         {
@@ -1779,7 +1292,7 @@
         46
       ],
       "flags": {},
-      "order": 36,
+      "order": 38,
       "mode": 0,
       "inputs": [
         {
@@ -1834,11 +1347,11 @@
         310
       ],
       "flags": {},
-      "order": 11,
+      "order": 8,
       "mode": 0,
       "inputs": [],
       "outputs": [],
-      "title": "Длина видео",
+      "title": "Р”Р»РёРЅР° РІРёРґРµРѕ",
       "properties": {
         "ue_properties": {
           "version": "7.0.1",
@@ -1846,7 +1359,7 @@
         }
       },
       "widgets_values": [
-        "### Рекомендуемая длина (фреймы)\n\nДлина видео в секундах = **Количество кадров ÷ FPS**\n\n### **Для 16 FPS:**\n---\nПродолжительность → Количество кадров\n---\n- **1 секунда** → `17 кадров`\n- **2 секунды** → `33 кадра`\n- **3 секунды** → `49 кадров`\n- **4 секунды** → `65 кадров`\n- **5 секунд** → `81 кадр`\n\n### **Для 24 FPS:**\n---\nПродолжительность → Количество кадров\n---\n- **1 секунда** → `25 кадров`\n- **2 секунды** → `49 кадров`\n- **3 секунды** → `73 кадра`\n- **4 секунды** → `97 кадров`\n- **5 секунд** → `121 кадр`\n### **Для 30 FPS:**\n---\nПродолжительность → Количество кадров\n---\n- **1 секунда** → `31 кадр`\n- **2 секунды** → `61 кадр`\n- **3 секунды** → `91 кадр`\n- **4 секунды** → `121 кадр`\n- **5 секунд** → `151 кадр`\n\n"
+        "### Р РµРєРѕРјРµРЅРґСѓРµРјР°СЏ РґР»РёРЅР° (С„СЂРµР№РјС‹)\n\nР”Р»РёРЅР° РІРёРґРµРѕ РІ СЃРµРєСѓРЅРґР°С… = **РљРѕР»РёС‡РµСЃС‚РІРѕ РєР°РґСЂРѕРІ Г· FPS**\n\n### **Р”Р»СЏ 16 FPS:**\n---\nРџСЂРѕРґРѕР»Р¶РёС‚РµР»СЊРЅРѕСЃС‚СЊ в†’ РљРѕР»РёС‡РµСЃС‚РІРѕ РєР°РґСЂРѕРІ\n---\n- **1 СЃРµРєСѓРЅРґР°** в†’ `17 РєР°РґСЂРѕРІ`\n- **2 СЃРµРєСѓРЅРґС‹** в†’ `33 РєР°РґСЂР°`\n- **3 СЃРµРєСѓРЅРґС‹** в†’ `49 РєР°РґСЂРѕРІ`\n- **4 СЃРµРєСѓРЅРґС‹** в†’ `65 РєР°РґСЂРѕРІ`\n- **5 СЃРµРєСѓРЅРґ** в†’ `81 РєР°РґСЂ`\n\n### **Р”Р»СЏ 24 FPS:**\n---\nРџСЂРѕРґРѕР»Р¶РёС‚РµР»СЊРЅРѕСЃС‚СЊ в†’ РљРѕР»РёС‡РµСЃС‚РІРѕ РєР°РґСЂРѕРІ\n---\n- **1 СЃРµРєСѓРЅРґР°** в†’ `25 РєР°РґСЂРѕРІ`\n- **2 СЃРµРєСѓРЅРґС‹** в†’ `49 РєР°РґСЂРѕРІ`\n- **3 СЃРµРєСѓРЅРґС‹** в†’ `73 РєР°РґСЂР°`\n- **4 СЃРµРєСѓРЅРґС‹** в†’ `97 РєР°РґСЂРѕРІ`\n- **5 СЃРµРєСѓРЅРґ** в†’ `121 РєР°РґСЂ`\n### **Р”Р»СЏ 30 FPS:**\n---\nРџСЂРѕРґРѕР»Р¶РёС‚РµР»СЊРЅРѕСЃС‚СЊ в†’ РљРѕР»РёС‡РµСЃС‚РІРѕ РєР°РґСЂРѕРІ\n---\n- **1 СЃРµРєСѓРЅРґР°** в†’ `31 РєР°РґСЂ`\n- **2 СЃРµРєСѓРЅРґС‹** в†’ `61 РєР°РґСЂ`\n- **3 СЃРµРєСѓРЅРґС‹** в†’ `91 РєР°РґСЂ`\n- **4 СЃРµРєСѓРЅРґС‹** в†’ `121 РєР°РґСЂ`\n- **5 СЃРµРєСѓРЅРґ** в†’ `151 РєР°РґСЂ`\n\n"
       ],
       "color": "#223",
       "bgcolor": "#335"
@@ -1863,11 +1376,11 @@
         313.3999938964844
       ],
       "flags": {},
-      "order": 12,
+      "order": 9,
       "mode": 0,
       "inputs": [],
       "outputs": [],
-      "title": "Длина видео",
+      "title": "Р”Р»РёРЅР° РІРёРґРµРѕ",
       "properties": {
         "ue_properties": {
           "version": "7.0.1",
@@ -1875,7 +1388,7 @@
         }
       },
       "widgets_values": [
-        "### **Рекомендуемое разрешение**\n---\nВысота\n---\n- → `256 px`\n- → `320 px`\n- → `384 px`\n- → `448 px`\n- → `512 px`\n- → `576 px`\n- → `640 px`\n- → `704 px`\n- → `768 px`\n- → `832 px`\n- → `896 px`\n- → `960 px`\n- → `1024 px`\n- → `1088 px`\n- → `1152 px`\n- → `1216 px`\n- → `1280 px`"
+        "### **Р РµРєРѕРјРµРЅРґСѓРµРјРѕРµ СЂР°Р·СЂРµС€РµРЅРёРµ**\n---\nР’С‹СЃРѕС‚Р°\n---\n- в†’ `256 px`\n- в†’ `320 px`\n- в†’ `384 px`\n- в†’ `448 px`\n- в†’ `512 px`\n- в†’ `576 px`\n- в†’ `640 px`\n- в†’ `704 px`\n- в†’ `768 px`\n- в†’ `832 px`\n- в†’ `896 px`\n- в†’ `960 px`\n- в†’ `1024 px`\n- в†’ `1088 px`\n- в†’ `1152 px`\n- в†’ `1216 px`\n- в†’ `1280 px`"
       ],
       "color": "#223",
       "bgcolor": "#335"
@@ -1892,11 +1405,11 @@
         319.7884826660156
       ],
       "flags": {},
-      "order": 13,
+      "order": 10,
       "mode": 0,
       "inputs": [],
       "outputs": [],
-      "title": "Разрешение",
+      "title": "Р Р°Р·СЂРµС€РµРЅРёРµ",
       "properties": {
         "ue_properties": {
           "version": "7.0.1",
@@ -1904,10 +1417,130 @@
         }
       },
       "widgets_values": [
-        "### Используйте ширину и высоту, для настройки разрешения выходного видео\n\n| **Aspect Ratio** | **Width × Height** |\n|------------------|--------------------|\n| **9:16**         | **480 × 832**      |\n|                  | 576 × 1024         |\n|                  | 720 × 1280         |\n| **16:9**         | **832 × 480**      |\n|                  | 1280 × 720         |\n|                  | 1024 × 576         |\n| **1:1**          | **512 × 512**      |\n|                  | 640 × 640          |\n|                  | 768 × 768          |\n"
+        "### РСЃРїРѕР»СЊР·СѓР№С‚Рµ С€РёСЂРёРЅСѓ Рё РІС‹СЃРѕС‚Сѓ, РґР»СЏ РЅР°СЃС‚СЂРѕР№РєРё СЂР°Р·СЂРµС€РµРЅРёСЏ РІС‹С…РѕРґРЅРѕРіРѕ РІРёРґРµРѕ\n\n| **Aspect Ratio** | **Width Г— Height** |\n|------------------|--------------------|\n| **9:16**         | **480 Г— 832**      |\n|                  | 576 Г— 1024         |\n|                  | 720 Г— 1280         |\n| **16:9**         | **832 Г— 480**      |\n|                  | 1280 Г— 720         |\n|                  | 1024 Г— 576         |\n| **1:1**          | **512 Г— 512**      |\n|                  | 640 Г— 640          |\n|                  | 768 Г— 768          |\n"
       ],
       "color": "#223",
       "bgcolor": "#335"
+    },
+    {
+      "id": 62,
+      "type": "LoadImage",
+      "pos": [
+        506.29997570051626,
+        3467.966064367301
+      ],
+      "size": [
+        222.798828125,
+        314
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            158
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "slot_index": 1,
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.45",
+        "Node name for S&R": "LoadImage",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65,
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "image (19)-.jpg",
+        "image"
+      ]
+    },
+    {
+      "id": 70,
+      "type": "Note",
+      "pos": [
+        1372.0348185793298,
+        2683.3900778154607
+      ],
+      "size": [
+        340,
+        120
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Note: Video Size",
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "By default, we set the video to a smaller size for users with low VRAM. If you have enough VRAM, you can change the size"
+      ],
+      "color": "#432",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 110,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        869.9415430956458,
+        3370.469465353779
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            225,
+            228
+          ]
+        }
+      ],
+      "title": "Positive prompt",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.9.1",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "Camera is slowly pushes out. She constatantly walks back. Her image makes smaller constantly"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
     },
     {
       "id": 67,
@@ -1921,7 +1554,7 @@
         260
       ],
       "flags": {},
-      "order": 22,
+      "order": 24,
       "mode": 0,
       "inputs": [
         {
@@ -2007,10 +1640,531 @@
         }
       },
       "widgets_values": [
-        720,
-        1280,
+        768,
+        768,
         121,
         1
+      ]
+    },
+    {
+      "id": 116,
+      "type": "StringSubstring",
+      "pos": [
+        2051.707357007513,
+        2070.551842542891
+      ],
+      "size": [
+        210,
+        136
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "string",
+          "type": "STRING",
+          "widget": {
+            "name": "string"
+          },
+          "link": 225
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            255
+          ]
+        }
+      ],
+      "title": "to save",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.9.1",
+        "Node name for S&R": "StringSubstring"
+      },
+      "widgets_values": [
+        "",
+        0,
+        41
+      ]
+    },
+    {
+      "id": 97,
+      "type": "LoraLoaderModelOnly",
+      "pos": [
+        480.2473842095645,
+        2862.6689907902805
+      ],
+      "size": [
+        270,
+        82
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 186
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            190
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.7.0",
+        "Node name for S&R": "LoraLoaderModelOnly"
+      },
+      "widgets_values": [
+        "23High noise-Cumshot Aesthetics.safetensors",
+        0.7
+      ]
+    },
+    {
+      "id": 158,
+      "type": "WidgetToString",
+      "pos": [
+        1403.93909819772,
+        2447.6385113632027
+      ],
+      "size": [
+        294.341796875,
+        154
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "any_input",
+          "shape": 7,
+          "type": "*",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            291
+          ]
+        }
+      ],
+      "title": "LowLoraName",
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "93a4fba44c1635a716dc262f157a7ded7d716f3a",
+        "Node name for S&R": "WidgetToString"
+      },
+      "widgets_values": [
+        98,
+        "lora_name",
+        false,
+        "",
+        2
+      ]
+    },
+    {
+      "id": 137,
+      "type": "PreviewAny",
+      "pos": [
+        2261.5294149442675,
+        2205.597663385599
+      ],
+      "size": [
+        250.87298574870601,
+        112
+      ],
+      "flags": {},
+      "order": 41,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "source",
+          "type": "*",
+          "link": 259
+        }
+      ],
+      "outputs": [],
+      "title": "filename",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.9.1",
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 129,
+      "type": "StringReplace",
+      "pos": [
+        2418.205840502537,
+        2077.490291062862
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 30,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "string",
+          "type": "STRING",
+          "widget": {
+            "name": "string"
+          },
+          "link": 230
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            292
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.9.1",
+        "Node name for S&R": "StringReplace"
+      },
+      "widgets_values": [
+        "",
+        " ",
+        "_"
+      ]
+    },
+    {
+      "id": 143,
+      "type": "StringConcatenate",
+      "pos": [
+        2391.6441001125463,
+        2126.15908507506
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 39,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "string_a",
+          "type": "STRING",
+          "widget": {
+            "name": "string_a"
+          },
+          "link": 258
+        },
+        {
+          "name": "string_b",
+          "type": "STRING",
+          "widget": {
+            "name": "string_b"
+          },
+          "link": 257
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            259,
+            260
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.9.1",
+        "Node name for S&R": "StringConcatenate"
+      },
+      "widgets_values": [
+        "",
+        "",
+        "-"
+      ]
+    },
+    {
+      "id": 141,
+      "type": "StringConcatenate",
+      "pos": [
+        2232.580231564422,
+        2127.219425704972
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 37,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "string_a",
+          "type": "STRING",
+          "widget": {
+            "name": "string_a"
+          },
+          "link": 253
+        },
+        {
+          "name": "string_b",
+          "type": "STRING",
+          "widget": {
+            "name": "string_b"
+          },
+          "link": 252
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            258
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.9.1",
+        "Node name for S&R": "StringConcatenate"
+      },
+      "widgets_values": [
+        "",
+        "",
+        "x"
+      ]
+    },
+    {
+      "id": 140,
+      "type": "StringConcatenate",
+      "pos": [
+        2076.2772298602463,
+        2126.8793204621643
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 35,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "string_a",
+          "type": "STRING",
+          "widget": {
+            "name": "string_a"
+          },
+          "link": 294
+        },
+        {
+          "name": "string_b",
+          "type": "STRING",
+          "widget": {
+            "name": "string_b"
+          },
+          "link": 250
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            253
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.9.1",
+        "Node name for S&R": "StringConcatenate"
+      },
+      "widgets_values": [
+        "",
+        "",
+        "-"
+      ]
+    },
+    {
+      "id": 160,
+      "type": "StringConcatenate",
+      "pos": [
+        1908.0996123768914,
+        2131.137744128504
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 33,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "string_a",
+          "type": "STRING",
+          "widget": {
+            "name": "string_a"
+          },
+          "link": 292
+        },
+        {
+          "name": "string_b",
+          "type": "STRING",
+          "widget": {
+            "name": "string_b"
+          },
+          "link": 293
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            294
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.9.1",
+        "Node name for S&R": "StringConcatenate"
+      },
+      "widgets_values": [
+        "",
+        "",
+        "-"
+      ]
+    },
+    {
+      "id": 156,
+      "type": "RegexExtract",
+      "pos": [
+        1745.6478911413749,
+        2133.9386358739357
+      ],
+      "size": [
+        400,
+        262
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "string",
+          "type": "STRING",
+          "widget": {
+            "name": "string"
+          },
+          "link": 291
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            293
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.9.1",
+        "Node name for S&R": "RegexExtract"
+      },
+      "widgets_values": [
+        "",
+        "^.*(.{18}).{12}$",
+        "All Groups",
+        true,
+        false,
+        false,
+        1
+      ]
+    },
+    {
+      "id": 98,
+      "type": "LoraLoaderModelOnly",
+      "pos": [
+        890.8653856374046,
+        2850.2496464811397
+      ],
+      "size": [
+        270,
+        82
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 188
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            192
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.7.0",
+        "Node name for S&R": "LoraLoaderModelOnly"
+      },
+      "widgets_values": [
+        "56Low noise-Cumshot Aesthetics.safetensors",
+        0.7
       ]
     }
   ],
@@ -2272,14 +2426,6 @@
       "STRING"
     ],
     [
-      249,
-      129,
-      0,
-      140,
-      0,
-      "STRING"
-    ],
-    [
       250,
       136,
       0,
@@ -2350,12 +2496,44 @@
       61,
       1,
       "STRING"
+    ],
+    [
+      291,
+      158,
+      0,
+      156,
+      0,
+      "STRING"
+    ],
+    [
+      292,
+      129,
+      0,
+      160,
+      0,
+      "STRING"
+    ],
+    [
+      293,
+      156,
+      0,
+      160,
+      1,
+      "STRING"
+    ],
+    [
+      294,
+      160,
+      0,
+      140,
+      0,
+      "STRING"
     ]
   ],
   "groups": [
     {
       "id": 12,
-      "title": "Enable lightning lora version (Can Speed up the workflow but will sacrifice some quality）",
+      "title": "Enable lightning lora version (Can Speed up the workflow but will sacrifice some qualityпј‰",
       "bounding": [
         492.0348185793308,
         1308.2519349455674,
@@ -2435,10 +2613,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.7140583006309454,
+      "scale": 0.7140583006309461,
       "offset": [
-        -401.7076690418014,
-        -2584.50138356994
+        -702.3157159650494,
+        -1830.041881493719
       ]
     },
     "frontendVersion": "1.36.14",
