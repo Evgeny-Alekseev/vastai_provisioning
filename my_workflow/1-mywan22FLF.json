@@ -1011,7 +1011,7 @@
         }
       },
       "widgets_values": [
-        "жњЂе·®иґЁй‡Џ, дЅЋиґЁй‡Џ, ж•ґдЅ“еЏ‘зЃ°, з»†иЉ‚жЁЎзіЉдёЌжё…, иї‡ж›ќ, и‰Іи°ѓи‰ідёЅ, йќ™жЂЃ, йќ™ж­ў, з”»йќў, йЈЋж ј, дЅње“Ѓ, з”»дЅњ, е­—е№•, дё‘й™‹зљ„, з•ёеЅўзљ„, ж®‹зјєзљ„, жЇЃе®№зљ„, е¤љдЅ™зљ„ж‰‹жЊ‡, з”»еѕ—дёЌеҐЅзљ„ж‰‹йѓЁ, з”»еѕ—дёЌеҐЅзљ„и„ёйѓЁ, еЅўжЂЃз•ёеЅўзљ„и‚ўдЅ“, ж‰‹жЊ‡ићЌеђ€, дё‰жќЎи…ї, жќ‚д№±зљ„иѓЊж™Ї, иѓЊж™Їдєєеѕ€е¤љ, еЂ’зќЂиµ°, й›ѕ, зѓџ, йќ™ж­ўдёЌеЉЁзљ„з”»йќў, и–„й›ѕ, жњ¦иѓ§, зѓџй›ѕејҐжј«, ж°ґи’ёж°”, и’ёж±Ѕ, JPEGеЋ‹зј©ж®‹з•™, worst quality, low quality, bad anatomy, ugly, deformed, blurred details, extra fingers, poorly drawn hands, poorly drawn face, overexposed, oversaturated, static, still, cluttered background, anime, illustration, malformed, disfigured, mutilated, extra limbs, duplicate limbs, fused fingers, overall gray, bright colors, crowded background, talking, speaking, closing eyes, awkward pose, paintings, picture, style, stylized, smoke, fog, mist, haze, JPEG artifacts, JPEG compression residue, subtitles, incomplete, three legs, slow motion, male face, male head, chinese face, walking backwards, upside down, still image, still picture, static motionless frame, fused body, male genitalia, mutated genitals, deformed limbs, deformed penis, grotesque pussy, overlapping vagina, unnatural bulge, deformed crotch, low detail mouth, low detail teeth, low detail tongue, low detail penis, low detail cum, bad physics, bad fluid dynamics, bad physiological reactions, disappearing cum, steam, vapor, a lot of people in the background, camera pan, camera shake, camera tilt, zoom in, zoom out"
+        "最差质量, 低质量, 整体发灰, 细节模糊不清, 过曝, 色调艳丽, 静态, 静止, 画面, 风格, 作品, 画作, 字幕, 丑陋的, 畸形的, 残缺的, 毁容的, 多余的手指, 画得不好的手部, 画得不好的脸部, 形态畸形的肢体, 手指融合, 三条腿, 杂乱的背景, 背景人很多, 倒着走, 雾, 烟, 静止不动的画面, 薄雾, 朦胧, 烟雾弥漫, 水蒸气, 蒸汽, JPEG压缩残留, worst quality, low quality, bad anatomy, ugly, deformed, blurred details, extra fingers, poorly drawn hands, poorly drawn face, overexposed, oversaturated, static, still, cluttered background, anime, illustration, malformed, disfigured, mutilated, extra limbs, duplicate limbs, fused fingers, overall gray, bright colors, crowded background, talking, speaking, closing eyes, awkward pose, paintings, picture, style, stylized, smoke, fog, mist, haze, JPEG artifacts, JPEG compression residue, subtitles, incomplete, three legs, slow motion, male face, male head, chinese face, walking backwards, upside down, still image, still picture, static motionless frame, fused body, male genitalia, mutated genitals, deformed limbs, deformed penis, grotesque pussy, overlapping vagina, unnatural bulge, deformed crotch, low detail mouth, low detail teeth, low detail tongue, low detail penis, low detail cum, bad physics, bad fluid dynamics, bad physiological reactions, disappearing cum, steam, vapor, a lot of people in the background, camera pan, camera shake, camera tilt, zoom in, zoom out"
       ],
       "color": "#322",
       "bgcolor": "#533"
@@ -1294,7 +1294,7 @@
       "mode": 0,
       "inputs": [],
       "outputs": [],
-      "title": "Р”Р»РёРЅР° РІРёРґРµРѕ",
+      "title": "Длина видео",
       "properties": {
         "ue_properties": {
           "version": "7.0.1",
@@ -1302,7 +1302,7 @@
         }
       },
       "widgets_values": [
-        "### Р РµРєРѕРјРµРЅРґСѓРµРјР°СЏ РґР»РёРЅР° (С„СЂРµР№РјС‹)\n\nР”Р»РёРЅР° РІРёРґРµРѕ РІ СЃРµРєСѓРЅРґР°С… = **РљРѕР»РёС‡РµСЃС‚РІРѕ РєР°РґСЂРѕРІ Г· FPS**\n\n### **Р”Р»СЏ 16 FPS:**\n---\nРџСЂРѕРґРѕР»Р¶РёС‚РµР»СЊРЅРѕСЃС‚СЊ в†’ РљРѕР»РёС‡РµСЃС‚РІРѕ РєР°РґСЂРѕРІ\n---\n- **1 СЃРµРєСѓРЅРґР°** в†’ `17 РєР°РґСЂРѕРІ`\n- **2 СЃРµРєСѓРЅРґС‹** в†’ `33 РєР°РґСЂР°`\n- **3 СЃРµРєСѓРЅРґС‹** в†’ `49 РєР°РґСЂРѕРІ`\n- **4 СЃРµРєСѓРЅРґС‹** в†’ `65 РєР°РґСЂРѕРІ`\n- **5 СЃРµРєСѓРЅРґ** в†’ `81 РєР°РґСЂ`\n\n### **Р”Р»СЏ 24 FPS:**\n---\nРџСЂРѕРґРѕР»Р¶РёС‚РµР»СЊРЅРѕСЃС‚СЊ в†’ РљРѕР»РёС‡РµСЃС‚РІРѕ РєР°РґСЂРѕРІ\n---\n- **1 СЃРµРєСѓРЅРґР°** в†’ `25 РєР°РґСЂРѕРІ`\n- **2 СЃРµРєСѓРЅРґС‹** в†’ `49 РєР°РґСЂРѕРІ`\n- **3 СЃРµРєСѓРЅРґС‹** в†’ `73 РєР°РґСЂР°`\n- **4 СЃРµРєСѓРЅРґС‹** в†’ `97 РєР°РґСЂРѕРІ`\n- **5 СЃРµРєСѓРЅРґ** в†’ `121 РєР°РґСЂ`\n### **Р”Р»СЏ 30 FPS:**\n---\nРџСЂРѕРґРѕР»Р¶РёС‚РµР»СЊРЅРѕСЃС‚СЊ в†’ РљРѕР»РёС‡РµСЃС‚РІРѕ РєР°РґСЂРѕРІ\n---\n- **1 СЃРµРєСѓРЅРґР°** в†’ `31 РєР°РґСЂ`\n- **2 СЃРµРєСѓРЅРґС‹** в†’ `61 РєР°РґСЂ`\n- **3 СЃРµРєСѓРЅРґС‹** в†’ `91 РєР°РґСЂ`\n- **4 СЃРµРєСѓРЅРґС‹** в†’ `121 РєР°РґСЂ`\n- **5 СЃРµРєСѓРЅРґ** в†’ `151 РєР°РґСЂ`\n\n"
+        "### Рекомендуемая длина (фреймы)\n\nДлина видео в секундах = **Количество кадров ÷ FPS**\n\n### **Для 16 FPS:**\n---\nПродолжительность → Количество кадров\n---\n- **1 секунда** → `17 кадров`\n- **2 секунды** → `33 кадра`\n- **3 секунды** → `49 кадров`\n- **4 секунды** → `65 кадров`\n- **5 секунд** → `81 кадр`\n\n### **Для 24 FPS:**\n---\nПродолжительность → Количество кадров\n---\n- **1 секунда** → `25 кадров`\n- **2 секунды** → `49 кадров`\n- **3 секунды** → `73 кадра`\n- **4 секунды** → `97 кадров`\n- **5 секунд** → `121 кадр`\n### **Для 30 FPS:**\n---\nПродолжительность → Количество кадров\n---\n- **1 секунда** → `31 кадр`\n- **2 секунды** → `61 кадр`\n- **3 секунды** → `91 кадр`\n- **4 секунды** → `121 кадр`\n- **5 секунд** → `151 кадр`\n\n"
       ],
       "color": "#223",
       "bgcolor": "#335"
@@ -1323,7 +1323,7 @@
       "mode": 0,
       "inputs": [],
       "outputs": [],
-      "title": "Р Р°Р·СЂРµС€РµРЅРёРµ",
+      "title": "Разрешение",
       "properties": {
         "ue_properties": {
           "version": "7.0.1",
@@ -1331,7 +1331,7 @@
         }
       },
       "widgets_values": [
-        "### РСЃРїРѕР»СЊР·СѓР№С‚Рµ С€РёСЂРёРЅСѓ Рё РІС‹СЃРѕС‚Сѓ, РґР»СЏ РЅР°СЃС‚СЂРѕР№РєРё СЂР°Р·СЂРµС€РµРЅРёСЏ РІС‹С…РѕРґРЅРѕРіРѕ РІРёРґРµРѕ\n\n| **Aspect Ratio** | **Width Г— Height** |\n|------------------|--------------------|\n| **9:16**         | **480 Г— 832**      |\n|                  | 576 Г— 1024         |\n|                  | 720 Г— 1280         |\n| **16:9**         | **832 Г— 480**      |\n|                  | 1280 Г— 720         |\n|                  | 1024 Г— 576         |\n| **1:1**          | **512 Г— 512**      |\n|                  | 640 Г— 640          |\n|                  | 768 Г— 768          |\n"
+        "### Используйте ширину и высоту, для настройки разрешения выходного видео\n\n| **Aspect Ratio** | **Width × Height** |\n|------------------|--------------------|\n| **9:16**         | **480 × 832**      |\n|                  | 576 × 1024         |\n|                  | 720 × 1280         |\n| **16:9**         | **832 × 480**      |\n|                  | 1280 × 720         |\n|                  | 1024 × 576         |\n| **1:1**          | **512 × 512**      |\n|                  | 640 × 640          |\n|                  | 768 × 768          |\n"
       ],
       "color": "#223",
       "bgcolor": "#335"
@@ -2076,7 +2076,7 @@
       "mode": 0,
       "inputs": [],
       "outputs": [],
-      "title": "Р”Р»РёРЅР° РІРёРґРµРѕ",
+      "title": "Длина видео",
       "properties": {
         "ue_properties": {
           "version": "7.0.1",
@@ -2084,7 +2084,7 @@
         }
       },
       "widgets_values": [
-        "### **Р РµРєРѕРјРµРЅРґСѓРµРјРѕРµ СЂР°Р·СЂРµС€РµРЅРёРµ**\n---\nР’С‹СЃРѕС‚Р°\n---\n- в†’ `256 px`\n- в†’ `320 px`\n- в†’ `384 px`\n- в†’ `448 px`\n- в†’ `512 px`\n- в†’ `576 px`\n- в†’ `640 px`\n- в†’ `704 px`\n- в†’ `768 px`\n- в†’ `832 px`\n- в†’ `896 px`\n- в†’ `960 px`\n- в†’ `1024 px`\n- в†’ `1088 px`\n- в†’ `1152 px`\n- в†’ `1216 px`\n- в†’ `1280 px`"
+        "### **Рекомендуемое разрешение**\n---\nВысота\n---\n- → `256 px`\n- → `320 px`\n- → `384 px`\n- → `448 px`\n- → `512 px`\n- → `576 px`\n- → `640 px`\n- → `704 px`\n- → `768 px`\n- → `832 px`\n- → `896 px`\n- → `960 px`\n- → `1024 px`\n- → `1088 px`\n- → `1152 px`\n- → `1216 px`\n- → `1280 px`"
       ],
       "color": "#223",
       "bgcolor": "#335"
@@ -2188,7 +2188,7 @@
       "title": "Prompt Guide",
       "properties": {},
       "widgets_values": [
-        "[Р“Р»Р°РІРЅС‹Р№ РїРµСЂСЃРѕРЅР°Р¶/РѕР±СЉРµРєС‚ СЃ РґРµС‚Р°Р»СЊРЅС‹Рј РѕРїРёСЃР°РЅРёРµРј РІРЅРµС€РЅРѕСЃС‚Рё, РѕРґРµР¶РґС‹, СЌРјРѕС†РёР№, С…Р°СЂР°РєС‚РµСЂРЅС‹С… С‡РµСЂС‚]|[РћРїРёСЃР°РЅРёРµ СЃС†РµРЅС‹ Рё РѕРєСЂСѓР¶РµРЅРёСЏ: РјРµСЃС‚Рѕ, Р°С‚РјРѕСЃС„РµСЂР°, РґРµС‚Р°Р»Рё С„РѕРЅР°, РіР»СѓР±РёРЅР°]|[РћРїРёСЃР°РЅРёРµ РґРІРёР¶РµРЅРёСЏ: РґРµР№СЃС‚РІРёСЏ РїРµСЂСЃРѕРЅР°Р¶Р°, РІР·Р°РёРјРѕРґРµР№СЃС‚РІРёРµ СЃ РєР°РјРµСЂРѕР№, РґРёРЅР°РјРёРєР° РѕРєСЂСѓР¶РµРЅРёСЏ]|[Aesthetic Control: РёСЃС‚РѕС‡РЅРёРє СЃРІРµС‚Р°, С‚РёРї РѕСЃРІРµС‰РµРЅРёСЏ, РІСЂРµРјСЏ СЃСѓС‚РѕРє, РєРѕРјРїРѕР·РёС†РёСЏ, СЂР°Р·РјРµСЂ РєР°РґСЂР°, РѕРїС‚РёРєР°, РґРІРёР¶РµРЅРёСЏ РєР°РјРµСЂС‹]|[Stylization: С…СѓРґРѕР¶РµСЃС‚РІРµРЅРЅС‹Р№ СЃС‚РёР»СЊ, РІР°Р№Р±, РІРёР·СѓР°Р»СЊРЅС‹Р№ СЌС„С„РµРєС‚]"
+        "[Главный персонаж/объект с детальным описанием внешности, одежды, эмоций, характерных черт]|[Описание сцены и окружения: место, атмосфера, детали фона, глубина]|[Описание движения: действия персонажа, взаимодействие с камерой, динамика окружения]|[Aesthetic Control: источник света, тип освещения, время суток, композиция, размер кадра, оптика, движения камеры]|[Stylization: художественный стиль, вайб, визуальный эффект]"
       ],
       "color": "#223",
       "bgcolor": "#335"
@@ -2559,7 +2559,7 @@
   "groups": [
     {
       "id": 12,
-      "title": "Enable lightning lora version (Can Speed up the workflow but will sacrifice some qualityпј‰",
+      "title": "Enable lightning lora version (Can Speed up the workflow but will sacrifice some quality）",
       "bounding": [
         492.0348185793308,
         1308.2519349455674,
