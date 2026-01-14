@@ -24,7 +24,63 @@ WORKFLOWS=(
     # Add workflow URLs here (e.g. direct links to .json workflow files)
     # Example:
     # "https://example.com/path/to/workflow.json"
+
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/my_workflow/video_wan2_2_14B_flf2v_3lorasnew8.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Loras/Multiple-Angles/multiple%20angles%20clownshark.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Loras/Multiple-Angles/multiple%20angles%20generator.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Loras/Multiple-Angles/multiple%20angles%20original.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Loras/Next-Scene/next-scene-v2%20Generate.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Loras/Next-Scene/next-scene-v2%20InputImage.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Loras/Qwen+Edit2509+Multi-Angles+NextScene%20ClownShark.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Loras/Qwen+Edit2509+Multi-Angles+NextScene.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Qwen-Edit/bf16/Qwen%20Edit%202509%20bf16.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Qwen-Edit/bf16/Qwen%20Edit%20bf16.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Qwen-Edit/bf16/Qwen%20Edit%20Inpaint%20bf16.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Qwen-Edit/bf16/Qwen%20Edit%20Ratio%202%20person(objects)%20bf16.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Qwen-Edit/bf16/Qwen%20Edit%20Ratio%203%20person(objects)%20bf16.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Qwen-Edit/bf16/Qwen%20Edit%20Ratio%20bf16.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Qwen-Edit/Grid_Img_Creator.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Qwen-Edit/Qwen%20Edit%20Inpaint%20Smyshnikov.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Qwen-Edit/Qwen%20Edit%20Ratio%202%20person(objects)%20Smyshnikov.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Qwen-Edit/Qwen%20Edit%20Ratio%203%20person(objects)%20Smyshnikov.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Qwen-Edit/Qwen%20Edit%20Ratio%20Smyshnikov.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Qwen-Edit/Qwen%20Edit%20Smyshnikov.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Qwen-Edit-2509/Qwen%20Edit%202509%20Inpaint%20Smyshnikov.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Qwen-Edit-2509/Qwen_Edit_2509.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Qwen-Edit-2509/Qwen_Edit_2509_ControlNet.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Qwen-Edit-2511/1.%20Qwen_Edit_2511%20multiref.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Qwen-Edit-2511/2.%20Qwen_Edit_2511%20multiref%20+%20Upscale.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Qwen-Edit-2511/3.%20Qwen_Edit_2511%20multiref%20+%20Controlnet%20+%20Upscale.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Qwen-Edit-2511/Qwen%20Edit%202511%20Auto%20Scenes.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Qwen-Edit-2511/Qwen_Edit_2511%201img.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Qwen-Image/Qwen%20Image%20BF16.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Qwen-Image/Qwen%20Image.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/snippets/ControlNet/InstantX-ControlNet.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/snippets/Grid_Img_Creator.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/snippets/Prompting/Camera%20Control%20Prompt%20Generator.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/snippets/Prompting/Florence2%20Prompting.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/snippets/Prompting/Qwen3VL%20Prompting.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/snippets/Upscale/SeedVR%20Upscale.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/wan/Animate/Wan_Animate_Enhance_Black.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/wan/Animate/Wan_Animate_not_completed.gguf.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/wan/Animate/Wan_Animate_Smyshnikov_Black.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/wan/Animate/Wan_Animate_Smyshnikov_Original.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/wan/FLF/WAN%202.2%20FLF2V%20Florence2.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/wan/I2V/WAN%202.2%20FaceEnhance%20Smyshnikov.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/wan/I2V/WAN%202.2%20I2V%20Smyshnikov.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/wan/I2V/Wan%20T2I%20Florence%20Smyshnikov.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/wan/T2I/Wan%20T2I%20Florence%20Smyshnikov.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/wan/T2I/WAN_2.2_T2I_Low_Smyshnikov_black.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/wan/T2V/Wan%202.2%20T2V_Smyshnikov.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/zit/batch/Z-Image%20Batch.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/zit/batch/Z-Image-Face%20Detailer%20Batch.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/zit/Florence2%20Prompting.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/zit/Florence2_BatchPromptingV2.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/zit/Qwen3VL%20Prompting.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/zit/Z-Image.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/zit/Z-Image-Face%20Detailer.json"
 )
+
 
 CHECKPOINT_MODELS=(
     "https://civitai.com/api/download/models/798204?type=Model&format=SafeTensor&size=full&fp=fp16"
@@ -262,4 +318,5 @@ function provisioning_download() {
 # Allow user to disable provisioning if they started with a script they didn't want
 if [[ ! -f /.noprovisioning ]]; then
     provisioning_start
+
 fi
