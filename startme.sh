@@ -326,7 +326,16 @@ function provisioning_download() {
     fi
 
     # Build wget command with optional auth header
-    wget "${wget_args[@]}" -qnc --content-disposition --show-progress -e dotbytes="${dotbytes}" -P "$dir" "$url"
+    wget "${wget_args[@]}" \
+        --no-clobber \
+        --content-disposition \
+        --show-progress \
+        --retry-on-http-error=403,404,429,500,502,503,504 \
+        --tries=3 \
+        --timeout=30 \
+        -e dotbytes="${dotbytes}" \
+        -P "$dir" \
+        "$url"
 }
 
 # Allow user to disable provisioning if they started with a script they didn't want
