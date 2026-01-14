@@ -306,10 +306,12 @@ function provisioning_download() {
     local dir="$2"
     local dotbytes="${3:-4M}"
     local auth_token=""
+    local wget_args=()
 
-    # HuggingFace auth (safe to send Authorization header, even across redirects)
+    # HuggingFace auth: use Authorization header (HF handles this gracefully for public repos)
     if [[ -n $HF_TOKEN && $url =~ ^https://([a-zA-Z0-9_-]+\.)?huggingface\.co(/|$|\?) ]]; then
         auth_token="$HF_TOKEN"
+        wget_args+=(--header="Authorization: Bearer $auth_token")
     # Civitai auth: use token in query string ONLY, no Authorization header
     elif [[ -n $CIVITAI_TOKEN && $url =~ ^https://([a-zA-Z0-9_-]+\.)?civitai\.com(/|$|\?) ]]; then
         # Append ?token=... so initial civitai.com request is authenticated,
@@ -323,11 +325,8 @@ function provisioning_download() {
         fi
     fi
 
-    if [[ -n $auth_token ]]; then
-        wget --header="Authorization: Bearer $auth_token" -qnc --content-disposition --show-progress -e dotbytes="${dotbytes}" -P "$dir" "$url"
-    else
-        wget -qnc --content-disposition --show-progress -e dotbytes="${dotbytes}" -P "$dir" "$url"
-    fi
+    # Build wget command with optional auth header
+    wget "${wget_args[@]}" -qnc --content-disposition --show-progress -e dotbytes="${dotbytes}" -P "$dir" "$url"
 }
 
 # Allow user to disable provisioning if they started with a script they didn't want
