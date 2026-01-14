@@ -1,7 +1,7 @@
 {
   "id": "ec7da562-7e21-4dac-a0d2-f4441e1efd3b",
   "revision": 0,
-  "last_node_id": 161,
+  "last_node_id": 162,
   "last_link_id": 300,
   "nodes": [
     {
@@ -234,7 +234,7 @@
         84.7523896127077
       ],
       "flags": {},
-      "order": 17,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -296,7 +296,7 @@
         84.75238961270725
       ],
       "flags": {},
-      "order": 16,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -358,7 +358,7 @@
         60
       ],
       "flags": {},
-      "order": 31,
+      "order": 32,
       "mode": 0,
       "inputs": [
         {
@@ -410,7 +410,7 @@
         58
       ],
       "flags": {},
-      "order": 32,
+      "order": 33,
       "mode": 0,
       "inputs": [
         {
@@ -462,7 +462,7 @@
         82
       ],
       "flags": {},
-      "order": 29,
+      "order": 30,
       "mode": 4,
       "inputs": [
         {
@@ -502,7 +502,7 @@
         82
       ],
       "flags": {},
-      "order": 28,
+      "order": 29,
       "mode": 4,
       "inputs": [
         {
@@ -542,7 +542,7 @@
         82
       ],
       "flags": {},
-      "order": 25,
+      "order": 26,
       "mode": 4,
       "inputs": [
         {
@@ -582,7 +582,7 @@
         82
       ],
       "flags": {},
-      "order": 26,
+      "order": 27,
       "mode": 4,
       "inputs": [
         {
@@ -821,7 +821,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 23,
+      "order": 24,
       "mode": 0,
       "inputs": [
         {
@@ -867,7 +867,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 27,
+      "order": 28,
       "mode": 0,
       "inputs": [
         {
@@ -910,7 +910,7 @@
         164.31304931640625
       ],
       "flags": {},
-      "order": 19,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -973,7 +973,7 @@
         180.6060791015625
       ],
       "flags": {},
-      "order": 15,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -1028,7 +1028,7 @@
         562.4080339500604
       ],
       "flags": {},
-      "order": 42,
+      "order": 43,
       "mode": 0,
       "inputs": [
         {
@@ -1083,7 +1083,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 34,
+      "order": 35,
       "mode": 0,
       "inputs": [
         {
@@ -1135,7 +1135,7 @@
       },
       "widgets_values": [
         "enable",
-        943327162489884,
+        276895157772940,
         "randomize",
         4,
         1,
@@ -1160,7 +1160,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 36,
+      "order": 37,
       "mode": 0,
       "inputs": [
         {
@@ -1224,63 +1224,6 @@
       ]
     },
     {
-      "id": 60,
-      "type": "CreateVideo",
-      "pos": [
-        1347.2873870390474,
-        3101.999866492646
-      ],
-      "size": [
-        270,
-        78
-      ],
-      "flags": {},
-      "order": 40,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 131
-        },
-        {
-          "name": "audio",
-          "shape": 7,
-          "type": "AUDIO",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "VIDEO",
-          "type": "VIDEO",
-          "links": [
-            132
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.45",
-        "Node name for S&R": "CreateVideo",
-        "enableTabs": false,
-        "tabWidth": 65,
-        "tabXOffset": 10,
-        "hasSecondTab": false,
-        "secondTabText": "Send Back",
-        "secondTabOffset": 80,
-        "secondTabWidth": 65,
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.1",
-          "input_ue_unconnectable": {}
-        }
-      },
-      "widgets_values": [
-        16
-      ]
-    },
-    {
       "id": 8,
       "type": "VAEDecode",
       "pos": [
@@ -1292,7 +1235,7 @@
         46
       ],
       "flags": {},
-      "order": 38,
+      "order": 39,
       "mode": 0,
       "inputs": [
         {
@@ -1365,35 +1308,6 @@
       "bgcolor": "#335"
     },
     {
-      "id": 144,
-      "type": "MarkdownNote",
-      "pos": [
-        1725.7047527842947,
-        3110.022039425956
-      ],
-      "size": [
-        231.10000610351562,
-        313.3999938964844
-      ],
-      "flags": {},
-      "order": 9,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "Р”Р»РёРЅР° РІРёРґРµРѕ",
-      "properties": {
-        "ue_properties": {
-          "version": "7.0.1",
-          "widget_ue_connectable": {}
-        }
-      },
-      "widgets_values": [
-        "### **Р РµРєРѕРјРµРЅРґСѓРµРјРѕРµ СЂР°Р·СЂРµС€РµРЅРёРµ**\n---\nР’С‹СЃРѕС‚Р°\n---\n- в†’ `256 px`\n- в†’ `320 px`\n- в†’ `384 px`\n- в†’ `448 px`\n- в†’ `512 px`\n- в†’ `576 px`\n- в†’ `640 px`\n- в†’ `704 px`\n- в†’ `768 px`\n- в†’ `832 px`\n- в†’ `896 px`\n- в†’ `960 px`\n- в†’ `1024 px`\n- в†’ `1088 px`\n- в†’ `1152 px`\n- в†’ `1216 px`\n- в†’ `1280 px`"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
       "id": 146,
       "type": "MarkdownNote",
       "pos": [
@@ -1405,7 +1319,7 @@
         319.7884826660156
       ],
       "flags": {},
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1434,7 +1348,7 @@
         314
       ],
       "flags": {},
-      "order": 11,
+      "order": 10,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1487,7 +1401,7 @@
         120
       ],
       "flags": {},
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1506,41 +1420,445 @@
       "bgcolor": "#000"
     },
     {
-      "id": 110,
-      "type": "PrimitiveStringMultiline",
+      "id": 116,
+      "type": "StringSubstring",
       "pos": [
-        869.9415430956458,
-        3370.469465353779
+        2051.707357007513,
+        2070.551842542891
       ],
       "size": [
-        400,
-        200
+        210,
+        136
       ],
-      "flags": {},
-      "order": 13,
+      "flags": {
+        "collapsed": true
+      },
+      "order": 20,
       "mode": 0,
-      "inputs": [],
+      "inputs": [
+        {
+          "name": "string",
+          "type": "STRING",
+          "widget": {
+            "name": "string"
+          },
+          "link": 225
+        }
+      ],
       "outputs": [
         {
           "name": "STRING",
           "type": "STRING",
           "links": [
-            225,
-            228
+            255
           ]
         }
       ],
-      "title": "Positive prompt",
+      "title": "to save",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.9.1",
-        "Node name for S&R": "PrimitiveStringMultiline"
+        "Node name for S&R": "StringSubstring"
       },
       "widgets_values": [
-        "Camera is slowly pushes out. She constatantly walks back. Her image makes smaller constantly"
+        "",
+        0,
+        41
+      ]
+    },
+    {
+      "id": 158,
+      "type": "WidgetToString",
+      "pos": [
+        1403.93909819772,
+        2447.6385113632027
       ],
-      "color": "#232",
-      "bgcolor": "#353"
+      "size": [
+        294.341796875,
+        154
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "any_input",
+          "shape": 7,
+          "type": "*",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            291
+          ]
+        }
+      ],
+      "title": "LowLoraName",
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "93a4fba44c1635a716dc262f157a7ded7d716f3a",
+        "Node name for S&R": "WidgetToString"
+      },
+      "widgets_values": [
+        98,
+        "lora_name",
+        false,
+        "",
+        2
+      ]
+    },
+    {
+      "id": 137,
+      "type": "PreviewAny",
+      "pos": [
+        2261.5294149442675,
+        2205.597663385599
+      ],
+      "size": [
+        250.87298574870601,
+        112
+      ],
+      "flags": {},
+      "order": 42,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "source",
+          "type": "*",
+          "link": 259
+        }
+      ],
+      "outputs": [],
+      "title": "filename",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.9.1",
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 129,
+      "type": "StringReplace",
+      "pos": [
+        2418.205840502537,
+        2077.490291062862
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 31,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "string",
+          "type": "STRING",
+          "widget": {
+            "name": "string"
+          },
+          "link": 230
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            292
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.9.1",
+        "Node name for S&R": "StringReplace"
+      },
+      "widgets_values": [
+        "",
+        " ",
+        "_"
+      ]
+    },
+    {
+      "id": 143,
+      "type": "StringConcatenate",
+      "pos": [
+        2391.6441001125463,
+        2126.15908507506
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 40,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "string_a",
+          "type": "STRING",
+          "widget": {
+            "name": "string_a"
+          },
+          "link": 258
+        },
+        {
+          "name": "string_b",
+          "type": "STRING",
+          "widget": {
+            "name": "string_b"
+          },
+          "link": 257
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            259,
+            260
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.9.1",
+        "Node name for S&R": "StringConcatenate"
+      },
+      "widgets_values": [
+        "",
+        "",
+        "-"
+      ]
+    },
+    {
+      "id": 141,
+      "type": "StringConcatenate",
+      "pos": [
+        2232.580231564422,
+        2127.219425704972
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 38,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "string_a",
+          "type": "STRING",
+          "widget": {
+            "name": "string_a"
+          },
+          "link": 253
+        },
+        {
+          "name": "string_b",
+          "type": "STRING",
+          "widget": {
+            "name": "string_b"
+          },
+          "link": 252
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            258
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.9.1",
+        "Node name for S&R": "StringConcatenate"
+      },
+      "widgets_values": [
+        "",
+        "",
+        "x"
+      ]
+    },
+    {
+      "id": 140,
+      "type": "StringConcatenate",
+      "pos": [
+        2076.2772298602463,
+        2126.8793204621643
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 36,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "string_a",
+          "type": "STRING",
+          "widget": {
+            "name": "string_a"
+          },
+          "link": 294
+        },
+        {
+          "name": "string_b",
+          "type": "STRING",
+          "widget": {
+            "name": "string_b"
+          },
+          "link": 250
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            253
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.9.1",
+        "Node name for S&R": "StringConcatenate"
+      },
+      "widgets_values": [
+        "",
+        "",
+        "-"
+      ]
+    },
+    {
+      "id": 160,
+      "type": "StringConcatenate",
+      "pos": [
+        1908.0996123768914,
+        2131.137744128504
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 34,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "string_a",
+          "type": "STRING",
+          "widget": {
+            "name": "string_a"
+          },
+          "link": 292
+        },
+        {
+          "name": "string_b",
+          "type": "STRING",
+          "widget": {
+            "name": "string_b"
+          },
+          "link": 293
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            294
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.9.1",
+        "Node name for S&R": "StringConcatenate"
+      },
+      "widgets_values": [
+        "",
+        "",
+        "-"
+      ]
+    },
+    {
+      "id": 156,
+      "type": "RegexExtract",
+      "pos": [
+        1745.6478911413749,
+        2133.9386358739357
+      ],
+      "size": [
+        400,
+        262
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "string",
+          "type": "STRING",
+          "widget": {
+            "name": "string"
+          },
+          "link": 291
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            293
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.9.1",
+        "Node name for S&R": "RegexExtract"
+      },
+      "widgets_values": [
+        "",
+        "^.*(.{18}).{12}$",
+        "All Groups",
+        true,
+        false,
+        false,
+        1
+      ]
     },
     {
       "id": 67,
@@ -1554,7 +1872,7 @@
         260
       ],
       "flags": {},
-      "order": 24,
+      "order": 25,
       "mode": 0,
       "inputs": [
         {
@@ -1640,58 +1958,136 @@
         }
       },
       "widgets_values": [
-        768,
-        768,
+        720,
+        1280,
         121,
         1
       ]
     },
     {
-      "id": 116,
-      "type": "StringSubstring",
+      "id": 60,
+      "type": "CreateVideo",
       "pos": [
-        2051.707357007513,
-        2070.551842542891
+        1347.2873870390474,
+        3101.999866492646
       ],
       "size": [
-        210,
-        136
+        270,
+        78
       ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 18,
+      "flags": {},
+      "order": 41,
       "mode": 0,
       "inputs": [
         {
-          "name": "string",
-          "type": "STRING",
-          "widget": {
-            "name": "string"
-          },
-          "link": 225
+          "name": "images",
+          "type": "IMAGE",
+          "link": 131
+        },
+        {
+          "name": "audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
         }
       ],
+      "outputs": [
+        {
+          "name": "VIDEO",
+          "type": "VIDEO",
+          "links": [
+            132
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.45",
+        "Node name for S&R": "CreateVideo",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65,
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        24
+      ]
+    },
+    {
+      "id": 110,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        869.9415430956458,
+        3370.469465353779
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [],
       "outputs": [
         {
           "name": "STRING",
           "type": "STRING",
           "links": [
-            255
+            225,
+            228
           ]
         }
       ],
-      "title": "to save",
+      "title": "Positive prompt",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.9.1",
-        "Node name for S&R": "StringSubstring"
+        "Node name for S&R": "PrimitiveStringMultiline"
       },
       "widgets_values": [
-        "",
-        0,
-        41
-      ]
+        "Blowbang. Focus on face and bust, handheld, dynamic. The girl is looking at the viewer, and then near her there are undressed 45 year old boys each with a large erect penis surrounding her. The boys rub their penises with a hand. Surrounded by man's penises. Bukkake, excessive white translucent cum. At least eight boys rub their erect penises and shoot thick viscous loads of white translucent cum on the girl's face, hair, neck, cheeks, chin, forehead, dress, and breasts where it collects in thick globs. The girl's eyes remain open and gleeful. Her eyes widen with excitement each time she feels a new load of white translucent cum lands on her breasts. They shoot all of their white translucent cum on her face, hair, neck, cheeks, chin, forehead, dress, and breasts. "
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 144,
+      "type": "MarkdownNote",
+      "pos": [
+        1725.7047527842947,
+        3110.022039425956
+      ],
+      "size": [
+        231.10000610351562,
+        313.3999938964844
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 14,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Р”Р»РёРЅР° РІРёРґРµРѕ",
+      "properties": {
+        "ue_properties": {
+          "version": "7.0.1",
+          "widget_ue_connectable": {}
+        }
+      },
+      "widgets_values": [
+        "### **Р РµРєРѕРјРµРЅРґСѓРµРјРѕРµ СЂР°Р·СЂРµС€РµРЅРёРµ**\n---\nР’С‹СЃРѕС‚Р°\n---\n- в†’ `256 px`\n- в†’ `320 px`\n- в†’ `384 px`\n- в†’ `448 px`\n- в†’ `512 px`\n- в†’ `576 px`\n- в†’ `640 px`\n- в†’ `704 px`\n- в†’ `768 px`\n- в†’ `832 px`\n- в†’ `896 px`\n- в†’ `960 px`\n- в†’ `1024 px`\n- в†’ `1088 px`\n- в†’ `1152 px`\n- в†’ `1216 px`\n- в†’ `1280 px`"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
     },
     {
       "id": 97,
@@ -1705,7 +2101,7 @@
         82
       ],
       "flags": {},
-      "order": 21,
+      "order": 22,
       "mode": 0,
       "inputs": [
         {
@@ -1730,400 +2126,6 @@
       },
       "widgets_values": [
         "23High noise-Cumshot Aesthetics.safetensors",
-        0.7
-      ]
-    },
-    {
-      "id": 158,
-      "type": "WidgetToString",
-      "pos": [
-        1403.93909819772,
-        2447.6385113632027
-      ],
-      "size": [
-        294.341796875,
-        154
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 14,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "any_input",
-          "shape": 7,
-          "type": "*",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            291
-          ]
-        }
-      ],
-      "title": "LowLoraName",
-      "properties": {
-        "cnr_id": "comfyui-kjnodes",
-        "ver": "93a4fba44c1635a716dc262f157a7ded7d716f3a",
-        "Node name for S&R": "WidgetToString"
-      },
-      "widgets_values": [
-        98,
-        "lora_name",
-        false,
-        "",
-        2
-      ]
-    },
-    {
-      "id": 137,
-      "type": "PreviewAny",
-      "pos": [
-        2261.5294149442675,
-        2205.597663385599
-      ],
-      "size": [
-        250.87298574870601,
-        112
-      ],
-      "flags": {},
-      "order": 41,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "source",
-          "type": "*",
-          "link": 259
-        }
-      ],
-      "outputs": [],
-      "title": "filename",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.9.1",
-        "Node name for S&R": "PreviewAny"
-      },
-      "widgets_values": [
-        null,
-        null,
-        null
-      ]
-    },
-    {
-      "id": 129,
-      "type": "StringReplace",
-      "pos": [
-        2418.205840502537,
-        2077.490291062862
-      ],
-      "size": [
-        400,
-        200
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 30,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "string",
-          "type": "STRING",
-          "widget": {
-            "name": "string"
-          },
-          "link": 230
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            292
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.9.1",
-        "Node name for S&R": "StringReplace"
-      },
-      "widgets_values": [
-        "",
-        " ",
-        "_"
-      ]
-    },
-    {
-      "id": 143,
-      "type": "StringConcatenate",
-      "pos": [
-        2391.6441001125463,
-        2126.15908507506
-      ],
-      "size": [
-        400,
-        200
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 39,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "string_a",
-          "type": "STRING",
-          "widget": {
-            "name": "string_a"
-          },
-          "link": 258
-        },
-        {
-          "name": "string_b",
-          "type": "STRING",
-          "widget": {
-            "name": "string_b"
-          },
-          "link": 257
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            259,
-            260
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.9.1",
-        "Node name for S&R": "StringConcatenate"
-      },
-      "widgets_values": [
-        "",
-        "",
-        "-"
-      ]
-    },
-    {
-      "id": 141,
-      "type": "StringConcatenate",
-      "pos": [
-        2232.580231564422,
-        2127.219425704972
-      ],
-      "size": [
-        400,
-        200
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 37,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "string_a",
-          "type": "STRING",
-          "widget": {
-            "name": "string_a"
-          },
-          "link": 253
-        },
-        {
-          "name": "string_b",
-          "type": "STRING",
-          "widget": {
-            "name": "string_b"
-          },
-          "link": 252
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            258
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.9.1",
-        "Node name for S&R": "StringConcatenate"
-      },
-      "widgets_values": [
-        "",
-        "",
-        "x"
-      ]
-    },
-    {
-      "id": 140,
-      "type": "StringConcatenate",
-      "pos": [
-        2076.2772298602463,
-        2126.8793204621643
-      ],
-      "size": [
-        400,
-        200
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 35,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "string_a",
-          "type": "STRING",
-          "widget": {
-            "name": "string_a"
-          },
-          "link": 294
-        },
-        {
-          "name": "string_b",
-          "type": "STRING",
-          "widget": {
-            "name": "string_b"
-          },
-          "link": 250
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            253
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.9.1",
-        "Node name for S&R": "StringConcatenate"
-      },
-      "widgets_values": [
-        "",
-        "",
-        "-"
-      ]
-    },
-    {
-      "id": 160,
-      "type": "StringConcatenate",
-      "pos": [
-        1908.0996123768914,
-        2131.137744128504
-      ],
-      "size": [
-        400,
-        200
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 33,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "string_a",
-          "type": "STRING",
-          "widget": {
-            "name": "string_a"
-          },
-          "link": 292
-        },
-        {
-          "name": "string_b",
-          "type": "STRING",
-          "widget": {
-            "name": "string_b"
-          },
-          "link": 293
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            294
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.9.1",
-        "Node name for S&R": "StringConcatenate"
-      },
-      "widgets_values": [
-        "",
-        "",
-        "-"
-      ]
-    },
-    {
-      "id": 156,
-      "type": "RegexExtract",
-      "pos": [
-        1745.6478911413749,
-        2133.9386358739357
-      ],
-      "size": [
-        400,
-        262
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 20,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "string",
-          "type": "STRING",
-          "widget": {
-            "name": "string"
-          },
-          "link": 291
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            293
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.9.1",
-        "Node name for S&R": "RegexExtract"
-      },
-      "widgets_values": [
-        "",
-        "^.*(.{18}).{12}$",
-        "All Groups",
-        true,
-        false,
-        false,
         1
       ]
     },
@@ -2139,7 +2141,7 @@
         82
       ],
       "flags": {},
-      "order": 22,
+      "order": 23,
       "mode": 0,
       "inputs": [
         {
@@ -2164,8 +2166,32 @@
       },
       "widgets_values": [
         "56Low noise-Cumshot Aesthetics.safetensors",
-        0.7
+        1
       ]
+    },
+    {
+      "id": 162,
+      "type": "MarkdownNote",
+      "pos": [
+        1316.8710345543843,
+        3780.3803855581514
+      ],
+      "size": [
+        233.84940176576129,
+        168.02336239907754
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Prompt Guide",
+      "properties": {},
+      "widgets_values": [
+        "[Р“Р»Р°РІРЅС‹Р№ РїРµСЂСЃРѕРЅР°Р¶/РѕР±СЉРµРєС‚ СЃ РґРµС‚Р°Р»СЊРЅС‹Рј РѕРїРёСЃР°РЅРёРµРј РІРЅРµС€РЅРѕСЃС‚Рё, РѕРґРµР¶РґС‹, СЌРјРѕС†РёР№, С…Р°СЂР°РєС‚РµСЂРЅС‹С… С‡РµСЂС‚]|[РћРїРёСЃР°РЅРёРµ СЃС†РµРЅС‹ Рё РѕРєСЂСѓР¶РµРЅРёСЏ: РјРµСЃС‚Рѕ, Р°С‚РјРѕСЃС„РµСЂР°, РґРµС‚Р°Р»Рё С„РѕРЅР°, РіР»СѓР±РёРЅР°]|[РћРїРёСЃР°РЅРёРµ РґРІРёР¶РµРЅРёСЏ: РґРµР№СЃС‚РІРёСЏ РїРµСЂСЃРѕРЅР°Р¶Р°, РІР·Р°РёРјРѕРґРµР№СЃС‚РІРёРµ СЃ РєР°РјРµСЂРѕР№, РґРёРЅР°РјРёРєР° РѕРєСЂСѓР¶РµРЅРёСЏ]|[Aesthetic Control: РёСЃС‚РѕС‡РЅРёРє СЃРІРµС‚Р°, С‚РёРї РѕСЃРІРµС‰РµРЅРёСЏ, РІСЂРµРјСЏ СЃСѓС‚РѕРє, РєРѕРјРїРѕР·РёС†РёСЏ, СЂР°Р·РјРµСЂ РєР°РґСЂР°, РѕРїС‚РёРєР°, РґРІРёР¶РµРЅРёСЏ РєР°РјРµСЂС‹]|[Stylization: С…СѓРґРѕР¶РµСЃС‚РІРµРЅРЅС‹Р№ СЃС‚РёР»СЊ, РІР°Р№Р±, РІРёР·СѓР°Р»СЊРЅС‹Р№ СЌС„С„РµРєС‚]"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
     }
   ],
   "links": [
@@ -2613,13 +2639,13 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.7140583006309461,
+      "scale": 0.9504115981397896,
       "offset": [
-        -702.3157159650494,
-        -1830.041881493719
+        -403.58290182539184,
+        -2728.20457719258
       ]
     },
-    "frontendVersion": "1.36.14",
+    "frontendVersion": "1.35.9",
     "workflowRendererVersion": "LG",
     "VHS_latentpreview": false,
     "VHS_latentpreviewrate": 0,
