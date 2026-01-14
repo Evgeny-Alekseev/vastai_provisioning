@@ -147,6 +147,11 @@ LORA_MODELS=(
     "https://civitai.com/api/download/models/2187757?type=Model&format=SafeTensor"
     # Ofacehigh
     "https://civitai.com/api/download/models/2187729?type=Model&format=SafeTensor"
+    # Orgasm LoRAs from civitaiarchive.com (no auth)
+    # orgasm_low
+    "https://civitaiarchive.com/api/download/models/2054796"
+    # orgasm_high
+    "https://civitaiarchive.com/api/download/models/2373145"
     # ultimateBJ (Playtime-AI, HuggingFace)
     # ultimateBJ_low
     "https://huggingface.co/Playtime-AI/Wan2.2-Loras/resolve/main/Wan2.2%20-%20I2V%20-%20Blowjob%20-%20LOW%2014B.safetensors"
@@ -174,6 +179,16 @@ CONTROLNET_MODELS=(
 # Text encoder models (HuggingFace Wan 2.2)
 TEXT_ENCODER_MODELS=(
     "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors"
+)
+
+# HuggingFace repos that require authentication (use HF_TOKEN)
+# Add repo names here (e.g., "Comfy-Org/Wan_2.2_ComfyUI_Repackaged")
+# All other HF repos will download anonymously
+HF_AUTH_REPOS=(
+    "Comfy-Org/Wan_2.2_ComfyUI_Repackaged"
+    # Add other private/gated HF repos here if needed
+    # Example:
+    # "SomeOrg/PrivateModel"
 )
 
 ### DO NOT EDIT BELOW HERE UNLESS YOU KNOW WHAT YOU ARE DOING ###
@@ -305,13 +320,22 @@ function provisioning_download() {
     local url="$1"
     local dir="$2"
     local dotbytes="${3:-4M}"
-    local auth_token=""
     local wget_args=()
 
-    # HuggingFace auth: use Authorization header (HF handles this gracefully for public repos)
+    # HuggingFace auth: only for specific repos listed in HF_AUTH_REPOS
     if [[ -n $HF_TOKEN && $url =~ ^https://([a-zA-Z0-9_-]+\.)?huggingface\.co(/|$|\?) ]]; then
-        auth_token="$HF_TOKEN"
-        wget_args+=(--header="Authorization: Bearer $auth_token")
+        local needs_auth=false
+        for repo in "${HF_AUTH_REPOS[@]}"; do
+            if [[ "$url" == *"/${repo}/"* ]]; then
+                needs_auth=true
+                break
+            fi
+        done
+        
+        if [[ "$needs_auth" == true ]]; then
+            wget_args+=(--header="Authorization: Bearer $HF_TOKEN")
+        fi
+        # Otherwise download anonymously (no auth header) - works for public repos
     # Civitai auth: use token in query string ONLY, no Authorization header
     elif [[ -n $CIVITAI_TOKEN && $url =~ ^https://([a-zA-Z0-9_-]+\.)?civitai\.com(/|$|\?) ]]; then
         # Append ?token=... so initial civitai.com request is authenticated,
