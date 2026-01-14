@@ -276,6 +276,65 @@ function provisioning_get_files() {
     done
 }
 
+# Download a HuggingFace file using Python requests.
+# Important: requests does NOT forward Authorization header to redirected hosts by default,
+# which avoids 401s from HF CAS/Xet redirect hosts.
+function provisioning_download_hf_with_python() {
+    local url="$1"
+    local dir="$2"
+    local dotbytes="${3:-4M}"
+
+    python - <<'PY' "$url" "$dir"
+import os
+import sys
+from pathlib import Path
+
+import requests
+
+url = sys.argv[1]
+out_dir = Path(sys.argv[2])
+out_dir.mkdir(parents=True, exist_ok=True)
+
+hf_token = os.environ.get("HF_TOKEN", "")
+headers = {}
+if hf_token:
+    headers["Authorization"] = f"Bearer {hf_token}"
+
+# Stream download; allow redirects. Requests will not forward Authorization to a different host.
+with requests.get(url, headers=headers, stream=True, allow_redirects=True, timeout=60) as r:
+    r.raise_for_status()
+
+    # Prefer filename from Content-Disposition if present
+    filename = None
+    cd = r.headers.get("content-disposition", "")
+    if "filename=" in cd:
+        # naive parse, good enough for our usage
+        parts = cd.split("filename=")
+        if len(parts) > 1:
+            filename = parts[1].strip().strip('"').strip("'").split(";")[0].strip()
+
+    if not filename:
+        filename = url.split("/")[-1].split("?")[0] or "download.bin"
+
+    out_path = out_dir / filename
+    if out_path.exists():
+        print(f"File exists, skipping: {out_path}")
+        sys.exit(0)
+
+    tmp_path = out_path.with_suffix(out_path.suffix + ".part")
+    written = 0
+    with open(tmp_path, "wb") as f:
+        for chunk in r.iter_content(chunk_size=1024 * 1024):
+            if not chunk:
+                continue
+            f.write(chunk)
+            written += len(chunk)
+
+    tmp_path.replace(out_path)
+    print(f"Saved: {out_path} ({written} bytes)")
+PY
+}
+
 function provisioning_print_header() {
     printf "\n##############################################\n#                                            #\n#          Provisioning container            #\n#                                            #\n#         This will take some time           #\n#                                            #\n# Your container will be ready on completion #\n#                                            #\n##############################################\n\n"
 }
@@ -334,7 +393,10 @@ function provisioning_download() {
         done
         
         if [[ "$needs_auth" == true ]]; then
-            wget_args+=(--header="Authorization: Bearer $HF_TOKEN")
+            # Use Python requests for HF auth downloads to avoid leaking Authorization header
+            # to HF CAS/Xet redirect hosts (which can return 401).
+            provisioning_download_hf_with_python "$url" "$dir" "$dotbytes"
+            return 0
         fi
         # Otherwise download anonymously (no auth header) - works for public repos
     # Civitai auth: use token in query string ONLY, no Authorization header
