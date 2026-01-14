@@ -34,7 +34,7 @@ WORKFLOWS=(
     # Example:
     # "https://example.com/path/to/workflow.json"
 
-  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/my_workflow/video_wan2_2_14B_flf2v_3lorasnew8.json"
+ "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/refs/heads/main/my_workflow/1-mywan22FLF.json"
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Loras/Multiple-Angles/multiple%20angles%20clownshark.json"
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Loras/Multiple-Angles/multiple%20angles%20generator.json"
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Loras/Multiple-Angles/multiple%20angles%20original.json"
