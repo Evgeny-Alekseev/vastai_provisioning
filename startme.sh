@@ -16,6 +16,7 @@ PIP_PACKAGES=(
 )
 
 NODES=(
+    "https://github.com/kijai/ComfyUI-KJNodes"
     #"https://github.com/ltdrdata/ComfyUI-Manager"
     #"https://github.com/cubiq/ComfyUI_essentials"
 )
