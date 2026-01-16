@@ -185,6 +185,8 @@ ESRGAN_MODELS=(
 )
 
 CONTROLNET_MODELS=(
+    # Qwen Image InstantX ControlNet
+    "https://huggingface.co/Comfy-Org/Qwen-Image-InstantX-ControlNets/resolve/main/split_files/controlnet/Qwen-Image-InstantX-ControlNet-Union.safetensors"
     # Add extra ControlNet model URLs here
 )
 
