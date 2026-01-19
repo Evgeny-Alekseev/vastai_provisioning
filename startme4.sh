@@ -34,7 +34,38 @@ WORKFLOWS=(
     # Example:
     # "https://example.com/path/to/workflow.json"
 
+  # my_workflow directory
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/my_workflow/1-mywan22FLF.json"
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/my_workflow/video_wan2_2_14B_flf2v_3lorasnew8.json"
+  
+  # others directory
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/ComfyUI-Wan-2.2-FLF2V.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/DaSiWa%20WAN%202.2%20i2v%20FastFidelity%20C-AiO-33.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/DaSiWa%20WAN%202.2%20i2v%20FastFidelity%20C-EX-14.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/DaSiWa%20WAN%202.2%20i2v%20FastFidelity%20C-FLF2V-13.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/DaSiWa%20WAN%202.2%20i2v%20FastFidelity%20C-I2V-13.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/DaSiWa%20WAN%202.2%20i2v%20FastFidelity%20C-SVI-14.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/Daxamur_WAN22_FLF2V_12.1.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/Daxamur_WAN22_I2V_12.1.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/Daxamur_WAN22_I2V_131.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/Face%20swap%20openart.ai.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/WAN2.2%20T2V-I2V-T2I-S2V%20K3NK%20v2.5.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/Wan-2.2-VACE.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/Wan2.2%2BRemix%2BI2V%2Bv2.1%2B%2BSVI2Pro%2B.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/Wan2.2-Remix-I2V-Comfy-Qwen3.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/Wan2.2-Remix-comfy-i2v-workflow.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/Wan2.2-Remix-comfy-t2v-workflow.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/Wan2.2-Remix-kijai-t2v-workflow.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/Wan22-I2V-Remix.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/background_generation_workflow.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/faceswap.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/qwen2512_.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/rmbg2openart.ai.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/wan2.2-flf2v-rapid-aio-example.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/workflow-remove-background-openart.ai.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/workflow_faceswap.json"
+  
+  # presets_smyshnikov/qwen directory
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Loras/Multiple-Angles/multiple%20angles%20clownshark.json"
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Loras/Multiple-Angles/multiple%20angles%20generator.json"
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Loras/Multiple-Angles/multiple%20angles%20original.json"
@@ -64,12 +95,18 @@ WORKFLOWS=(
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Qwen-Edit-2511/Qwen_Edit_2511%201img.json"
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Qwen-Image/Qwen%20Image%20BF16.json"
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Qwen-Image/Qwen%20Image.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Loras/Qwen+Edit2509+Multi-Angles+NextScene%20ClownShark.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Loras/Qwen+Edit2509+Multi-Angles+NextScene.json"
+  
+  # presets_smyshnikov/snippets directory
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/snippets/ControlNet/InstantX-ControlNet.json"
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/snippets/Grid_Img_Creator.json"
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/snippets/Prompting/Camera%20Control%20Prompt%20Generator.json"
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/snippets/Prompting/Florence2%20Prompting.json"
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/snippets/Prompting/Qwen3VL%20Prompting.json"
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/snippets/Upscale/SeedVR%20Upscale.json"
+  
+  # presets_smyshnikov/wan directory
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/wan/Animate/Wan_Animate_Enhance_Black.json"
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/wan/Animate/Wan_Animate_not_completed.gguf.json"
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/wan/Animate/Wan_Animate_Smyshnikov_Black.json"
@@ -81,6 +118,8 @@ WORKFLOWS=(
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/wan/T2I/Wan%20T2I%20Florence%20Smyshnikov.json"
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/wan/T2I/WAN_2.2_T2I_Low_Smyshnikov_black.json"
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/wan/T2V/Wan%202.2%20T2V_Smyshnikov.json"
+  
+  # presets_smyshnikov/zit directory
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/zit/batch/Z-Image%20Batch.json"
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/zit/batch/Z-Image-Face%20Detailer%20Batch.json"
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/zit/Florence2%20Prompting.json"
@@ -291,14 +330,32 @@ function provisioning_get_nodes() {
 function provisioning_get_files() {
     if [[ -z $2 ]]; then return 1; fi
     
-    dir="$1"
-    mkdir -p "$dir"
+    base_dir="$1"
+    mkdir -p "$base_dir"
     shift
     arr=("$@")
-    printf "Downloading %s model(s) to %s...\n" "${#arr[@]}" "$dir"
+    printf "Downloading %s model(s) to %s...\n" "${#arr[@]}" "$base_dir"
     for url in "${arr[@]}"; do
         printf "Downloading: %s\n" "${url}"
-        provisioning_download "${url}" "${dir}"
+        
+        # Extract subdirectory structure from URL for workflows
+        if [[ "$base_dir" == *"workflows"* ]]; then
+            # Extract path after domain for workflows
+            path_part=$(echo "$url" | sed 's|https://[^/]*/||' | sed 's|^[^/]*/||')
+            # Remove URL encoding and extract directory path
+            dir_path=$(dirname "$path_part" | sed 's/%20/ /g')
+            # Create full directory path
+            if [[ "$dir_path" != "." ]]; then
+                target_dir="${base_dir}/${dir_path}"
+                mkdir -p "$target_dir"
+            else
+                target_dir="$base_dir"
+            fi
+        else
+            target_dir="$base_dir"
+        fi
+        
+        provisioning_download "${url}" "${target_dir}"
         printf "\n"
     done
 }
