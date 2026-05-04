@@ -224,7 +224,7 @@ CONTROLNET_MODELS=(
 # GGUF models
 GGUF_MODELS=(
     # Qwen Image Edit 2511 GGUF model
-    "https://huggingface.co/unsloth/Qwen-Image-Edit-2511-GGUF/blob/main/qwen-image-edit-2511-Q8_0.gguf"
+    "https://huggingface.co/unsloth/Qwen-Image-Edit-2511-GGUF/resolve/main/qwen-image-edit-2511-Q8_0.gguf"
     # Add extra GGUF model URLs here
 )
 

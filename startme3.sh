@@ -275,14 +275,34 @@ function provisioning_get_nodes() {
 function provisioning_get_files() {
     if [[ -z $2 ]]; then return 1; fi
     
-    dir="$1"
-    mkdir -p "$dir"
+    base_dir="$1"
+    mkdir -p "$base_dir"
     shift
     arr=("$@")
-    printf "Downloading %s model(s) to %s...\n" "${#arr[@]}" "$dir"
+    printf "Downloading %s model(s) to %s...\n" "${#arr[@]}" "$base_dir"
     for url in "${arr[@]}"; do
         printf "Downloading: %s\n" "${url}"
-        provisioning_download "${url}" "${dir}"
+        
+        # Extract subdirectory structure from URL for workflows
+        if [[ "$base_dir" == *"workflows"* ]]; then
+            # Extract path after domain for workflows
+            path_part=$(echo "$url" | sed 's|https://[^/]*/||' | sed 's|^[^/]*/||')
+            # Remove vastai_provisioning/main/ prefix if present
+            path_part=$(echo "$path_part" | sed 's|^vastai_provisioning/main/||')
+            # Remove URL encoding and extract directory path
+            dir_path=$(dirname "$path_part" | sed 's/%20/ /g')
+            # Create full directory path
+            if [[ "$dir_path" != "." ]]; then
+                target_dir="${base_dir}/${dir_path}"
+                mkdir -p "$target_dir"
+            else
+                target_dir="$base_dir"
+            fi
+        else
+            target_dir="$base_dir"
+        fi
+        
+        provisioning_download "${url}" "${target_dir}"
         printf "\n"
     done
 }
