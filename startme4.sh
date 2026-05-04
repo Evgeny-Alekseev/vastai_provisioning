@@ -93,6 +93,16 @@ WORKFLOWS=(
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Qwen-Edit-2511/3.%20Qwen_Edit_2511%20multiref%20+%20Controlnet%20+%20Upscale.json"
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Qwen-Edit-2511/Qwen%20Edit%202511%20Auto%20Scenes.json"
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Qwen-Edit-2511/Qwen_Edit_2511%201img.json"
+  
+  # Qwen-Edit-2512 directory (and subdirectories)
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Qwen-Edit-2512/Qwen%202512%20Classic.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Qwen-Edit-2512/Qwen%202512%20ControlNet.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Qwen-Edit-2512/Qwen%202512%20Upscale.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Qwen-Edit-2512/ClownShark%20Sampler/Qwen%202512%20Classic%20Clownshark.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Qwen-Edit-2512/ClownShark%20Sampler/Qwen%202512%20ControlNet%20Clownshark.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Qwen-Edit-2512/ClownShark%20Sampler/Qwen%202512%20Upscale%20Clownshark.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Qwen-Edit-2512/Snippets/Image%20Caption.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Qwen-Edit-2512/Snippets/Qwen3%20VQA%20Prompting.json"
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Qwen-Image/Qwen%20Image%20BF16.json"
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Qwen-Image/Qwen%20Image.json"
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/snippets/ControlNet/InstantX-ControlNet.json"
