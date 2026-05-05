@@ -158,6 +158,18 @@ CHECKPOINT_MODELS=(
     # "https://huggingface.co/.../model.safetensors"
 )
 
+# Qwen Rapid AIO checkpoints (stored under models/checkpoints/Qwen)
+QWEN_CHECKPOINT_MODELS=(
+    "https://huggingface.co/Phr00t/Qwen-Image-Edit-Rapid-AIO/resolve/main/v23/Qwen-Rapid-AIO-SFW-v23.safetensors?download=true"
+    "https://huggingface.co/Phr00t/Qwen-Image-Edit-Rapid-AIO/resolve/main/v23/Qwen-Rapid-AIO-NSFW-v23.safetensors?download=true"
+    "https://huggingface.co/Phr00t/Qwen-Image-Edit-Rapid-AIO/resolve/main/v19/Qwen-Rapid-AIO-SFW-v19.safetensors?download=true"
+    "https://huggingface.co/Phr00t/Qwen-Image-Edit-Rapid-AIO/resolve/main/v19/Qwen-Rapid-AIO-NSFW-v19.safetensors?download=true"
+)
+
+SEEDVR2_CHECKPOINT_MODELS=(
+    "https://huggingface.co/numz/SeedVR2_comfyUI/resolve/main/seedvr2_ema_7b_fp16.safetensors?download=true"
+)
+
 UNET_MODELS=(
    
     # Qwen Image Edit 2511 diffusion models
@@ -212,6 +224,8 @@ LORA_MODELS=(
 VAE_MODELS=(
    
     "https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/vae/qwen_image_vae.safetensors"
+    # SeedVR2 VAE for Qwen-Edit-2511 upscale workflows
+    "https://huggingface.co/numz/SeedVR2_comfyUI/resolve/main/ema_vae_fp16.safetensors?download=true"
     # Add extra VAE model URLs here
 )
 
@@ -269,26 +283,12 @@ function provisioning_start() {
     provisioning_get_files \
         "${COMFYUI_DIR}/models/checkpoints" \
         "${CHECKPOINT_MODELS[@]}"
-    # SeedVR2 models used by Qwen-Edit-2511 upscale workflows
-    provisioning_download \
-        "https://huggingface.co/numz/SeedVR2_comfyUI/resolve/main/seedvr2_ema_7b_fp16.safetensors?download=true" \
-        "${COMFYUI_DIR}/models/checkpoints"
-    provisioning_download \
-        "https://huggingface.co/numz/SeedVR2_comfyUI/resolve/main/ema_vae_fp16.safetensors?download=true" \
-        "${COMFYUI_DIR}/models/vae"
-    # Qwen Rapid AIO checkpoints expected under models/checkpoints/Qwen
-    provisioning_download \
-        "https://huggingface.co/Phr00t/Qwen-Image-Edit-Rapid-AIO/resolve/main/v23/Qwen-Rapid-AIO-SFW-v23.safetensors?download=true" \
-        "${COMFYUI_DIR}/models/checkpoints/Qwen"
-    provisioning_download \
-        "https://huggingface.co/Phr00t/Qwen-Image-Edit-Rapid-AIO/resolve/main/v23/Qwen-Rapid-AIO-NSFW-v23.safetensors?download=true" \
-        "${COMFYUI_DIR}/models/checkpoints/Qwen"
-    provisioning_download \
-        "https://huggingface.co/Phr00t/Qwen-Image-Edit-Rapid-AIO/resolve/main/v19/Qwen-Rapid-AIO-SFW-v19.safetensors?download=true" \
-        "${COMFYUI_DIR}/models/checkpoints/Qwen"
-    provisioning_download \
-        "https://huggingface.co/Phr00t/Qwen-Image-Edit-Rapid-AIO/resolve/main/v19/Qwen-Rapid-AIO-NSFW-v19.safetensors?download=true" \
-        "${COMFYUI_DIR}/models/checkpoints/Qwen"
+    provisioning_get_files \
+        "${COMFYUI_DIR}/models/checkpoints/Qwen" \
+        "${QWEN_CHECKPOINT_MODELS[@]}"
+    provisioning_get_files \
+        "${COMFYUI_DIR}/models/checkpoints" \
+        "${SEEDVR2_CHECKPOINT_MODELS[@]}"
     provisioning_get_files \
         "${COMFYUI_DIR}/models/unet" \
         "${UNET_MODELS[@]}"
