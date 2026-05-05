@@ -23,8 +23,16 @@ NODES=(
     "https://github.com/yolain/ComfyUI-Easy-Use"
     "https://github.com/rgthree/rgthree-comfy"
     "https://github.com/chflame163/ComfyUI_LayerStyle"
+    # LayerMask: HumanPartsUltra
+    "https://github.com/chflame163/ComfyUI_LayerStyle_Advance"
     "https://github.com/city96/ComfyUI-GGUF"
     "https://github.com/Fannovel16/comfyui_controlnet_aux"
+    # AILab_QwenVL / AILab_QwenVL_Advanced
+    "https://github.com/1038lab/ComfyUI-QwenVL"
+    # Qwen3_VQA
+    "https://github.com/IuvenisSapiens/ComfyUI_Qwen3-VL-Instruct"
+    # ClownsharkSampler_Beta
+    "https://github.com/ClownsharkBatwing/RES4LYF"
     # TextEncodeQwenImageEditPlusAdvance_lrzjason
     "https://github.com/lrzjason/Comfyui-QwenEditUtils"
     # Qwen-Edit-2511 workflows

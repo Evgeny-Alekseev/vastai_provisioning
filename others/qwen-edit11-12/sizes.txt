@@ -1,0 +1,22 @@
+Qwen-Rapid-AIO-SFW-v23.safetensors	26.48
+Qwen-Rapid-AIO-NSFW-v23.safetensors	26.48
+Qwen-Rapid-AIO-SFW-v19.safetensors	26.48
+Qwen-Rapid-AIO-NSFW-v19.safetensors	26.48
+seedvr2_ema_7b_fp16.safetensors	15.35
+qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning.safetensors	 
+qwen_image_edit_2511_fp8mixed.safetensors	19.12
+qwen_image_edit_2511_bf16.safetensors	38.05
+qwen-image-2512-Q4_K_M.gguf	12.34
+Qwen-Image-Edit-2511-Lightning-4steps-V1.0-fp32.safetensors	1.58
+Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors	0.79
+edit_0928_lora_step40000.safetensors	0.44
+Qwen-Image-2512-Lightning-4steps-V1.0-fp32.safetensors	1.58
+Qwen-Image-2512-Lightning-8steps-V1.0-fp32.safetensors	1.58
+qwen_image_vae.safetensors	0.24
+ema_vae_fp16.safetensors	0.47
+Qwen-Image-InstantX-ControlNet-Union.safetensors	3.29
+qwen-image-edit-2511-Q8_0.gguf	20.27
+Qwen2.5-VL-7B-Instruct-UD-Q4_K_XL.gguf	4.46
+qwen_2.5_vl_7b_fp8_scaled.safetensors	8.74
+qwen_2.5_vl_7b.safetensors	15.45
+TOTAL_GiB 249.66149100009352
