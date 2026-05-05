@@ -25,6 +25,18 @@ NODES=(
     "https://github.com/chflame163/ComfyUI_LayerStyle"
     "https://github.com/city96/ComfyUI-GGUF"
     "https://github.com/Fannovel16/comfyui_controlnet_aux"
+    # TextEncodeQwenImageEditPlusAdvance_lrzjason
+    "https://github.com/lrzjason/Comfyui-QwenEditUtils"
+    # Qwen-Edit-2511 workflows
+    "https://github.com/LAOGOU-666/Comfyui-Memory_Cleanup"
+    "https://github.com/jamesWalker55/comfyui-various"
+    "https://github.com/xuchenxu168/Comfyui_Prompt_Edit"
+    "https://github.com/pythongosssss/ComfyUI-Custom-Scripts"
+    # was-ns + AutoCropFaces used by High+Fidelity workflow
+    "https://github.com/wasasquatch/was-node-suite-comfyui"
+    "https://github.com/liusida/ComfyUI-AutoCropFaces"
+    # comfyui_essentials_mb used by High+Fidelity workflow
+    "https://github.com/MinorBoy/ComfyUI_essentials_mb"
     #"https://github.com/ltdrdata/ComfyUI-Manager"
     #"https://github.com/cubiq/ComfyUI_essentials"
 )
@@ -34,36 +46,41 @@ WORKFLOWS=(
     # Example:
     # "https://example.com/path/to/workflow.json"
 
-  # my_workflow directory
-  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/my_workflow/1-mywan22FLF.json"
-  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/my_workflow/video_wan2_2_14B_flf2v_3lorasnew8.json"
+  # my_workflow directory (WAN workflows disabled)
+  #"https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/my_workflow/1-mywan22FLF.json"
+  #"https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/my_workflow/video_wan2_2_14B_flf2v_3lorasnew8.json"
   
-  # others directory
-  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/ComfyUI-Wan-2.2-FLF2V.json"
-  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/DaSiWa%20WAN%202.2%20i2v%20FastFidelity%20C-AiO-33.json"
-  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/DaSiWa%20WAN%202.2%20i2v%20FastFidelity%20C-EX-14.json"
-  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/DaSiWa%20WAN%202.2%20i2v%20FastFidelity%20C-FLF2V-13.json"
-  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/DaSiWa%20WAN%202.2%20i2v%20FastFidelity%20C-I2V-13.json"
-  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/DaSiWa%20WAN%202.2%20i2v%20FastFidelity%20C-SVI-14.json"
-  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/Daxamur_WAN22_FLF2V_12.1.json"
-  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/Daxamur_WAN22_I2V_12.1.json"
-  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/Daxamur_WAN22_I2V_131.json"
+  # others directory (WAN workflows disabled)
+  #"https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/ComfyUI-Wan-2.2-FLF2V.json"
+  #"https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/DaSiWa%20WAN%202.2%20i2v%20FastFidelity%20C-AiO-33.json"
+  #"https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/DaSiWa%20WAN%202.2%20i2v%20FastFidelity%20C-EX-14.json"
+  #"https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/DaSiWa%20WAN%202.2%20i2v%20FastFidelity%20C-FLF2V-13.json"
+  #"https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/DaSiWa%20WAN%202.2%20i2v%20FastFidelity%20C-I2V-13.json"
+  #"https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/DaSiWa%20WAN%202.2%20i2v%20FastFidelity%20C-SVI-14.json"
+  #"https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/Daxamur_WAN22_FLF2V_12.1.json"
+  #"https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/Daxamur_WAN22_I2V_12.1.json"
+  #"https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/Daxamur_WAN22_I2V_131.json"
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/Face%20swap%20openart.ai.json"
-  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/WAN2.2%20T2V-I2V-T2I-S2V%20K3NK%20v2.5.json"
-  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/Wan-2.2-VACE.json"
-  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/Wan2.2%2BRemix%2BI2V%2Bv2.1%2B%2BSVI2Pro%2B.json"
-  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/Wan2.2-Remix-I2V-Comfy-Qwen3.json"
-  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/Wan2.2-Remix-comfy-i2v-workflow.json"
-  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/Wan2.2-Remix-comfy-t2v-workflow.json"
-  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/Wan2.2-Remix-kijai-t2v-workflow.json"
-  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/Wan22-I2V-Remix.json"
+  #"https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/WAN2.2%20T2V-I2V-T2I-S2V%20K3NK%20v2.5.json"
+  #"https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/Wan-2.2-VACE.json"
+  #"https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/Wan2.2%2BRemix%2BI2V%2Bv2.1%2B%2BSVI2Pro%2B.json"
+  #"https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/Wan2.2-Remix-I2V-Comfy-Qwen3.json"
+  #"https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/Wan2.2-Remix-comfy-i2v-workflow.json"
+  #"https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/Wan2.2-Remix-comfy-t2v-workflow.json"
+  #"https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/Wan2.2-Remix-kijai-t2v-workflow.json"
+  #"https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/Wan22-I2V-Remix.json"
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/background_generation_workflow.json"
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/faceswap.json"
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/qwen2512_.json"
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/rmbg2openart.ai.json"
-  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/wan2.2-flf2v-rapid-aio-example.json"
+  #"https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/wan2.2-flf2v-rapid-aio-example.json"
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/workflow-remove-background-openart.ai.json"
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/workflow_faceswap.json"
+
+  # qwen-edit11-12 directory
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/qwen-edit11-12/High+Fidelity+Face+Swap+With+Qwen+Image+Edit+F2P.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/qwen-edit11-12/Qwen-Rapid-AIO.json"
+  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/others/qwen-edit11-12/unsloth_qwen_image_2512.json"
   
   # presets_smyshnikov directory - all subdirectories
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/qwen/Loras/Multiple-Angles/multiple%20angles%20clownshark.json"
@@ -111,17 +128,18 @@ WORKFLOWS=(
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/snippets/Prompting/Florence2%20Prompting.json"
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/snippets/Prompting/Qwen3VL%20Prompting.json"
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/snippets/Upscale/SeedVR%20Upscale.json"
-  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/wan/Animate/Wan_Animate_Enhance_Black.json"
-  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/wan/Animate/Wan_Animate_not_completed.gguf.json"
-  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/wan/Animate/Wan_Animate_Smyshnikov_Black.json"
-  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/wan/Animate/Wan_Animate_Smyshnikov_Original.json"
-  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/wan/FLF/WAN%202.2%20FLF2V%20Florence2.json"
-  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/wan/I2V/WAN%202.2%20FaceEnhance%20Smyshnikov.json"
-  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/wan/I2V/WAN%202.2%20I2V%20Smyshnikov.json"
-  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/wan/I2V/Wan%20T2I%20Florence%20Smyshnikov.json"
-  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/wan/T2I/Wan%20T2I%20Florence%20Smyshnikov.json"
-  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/wan/T2I/WAN_2.2_T2I_Low_Smyshnikov_black.json"
-  "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/wan/T2V/Wan%202.2%20T2V_Smyshnikov.json"
+  # presets_smyshnikov/wan directory (WAN workflows disabled)
+  #"https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/wan/Animate/Wan_Animate_Enhance_Black.json"
+  #"https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/wan/Animate/Wan_Animate_not_completed.gguf.json"
+  #"https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/wan/Animate/Wan_Animate_Smyshnikov_Black.json"
+  #"https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/wan/Animate/Wan_Animate_Smyshnikov_Original.json"
+  #"https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/wan/FLF/WAN%202.2%20FLF2V%20Florence2.json"
+  #"https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/wan/I2V/WAN%202.2%20FaceEnhance%20Smyshnikov.json"
+  #"https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/wan/I2V/WAN%202.2%20I2V%20Smyshnikov.json"
+  #"https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/wan/I2V/Wan%20T2I%20Florence%20Smyshnikov.json"
+  #"https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/wan/T2I/Wan%20T2I%20Florence%20Smyshnikov.json"
+  #"https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/wan/T2I/WAN_2.2_T2I_Low_Smyshnikov_black.json"
+  #"https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/wan/T2V/Wan%202.2%20T2V_Smyshnikov.json"
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/zit/batch/Z-Image%20Batch.json"
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/zit/batch/Z-Image-Face%20Detailer%20Batch.json"
   "https://raw.githubusercontent.com/Evgeny-Alekseev/vastai_provisioning/main/presets_smyshnikov/zit/Florence2%20Prompting.json"
@@ -133,7 +151,8 @@ WORKFLOWS=(
 
 
 CHECKPOINT_MODELS=(
-    "https://civitai.com/api/download/models/798204?type=Model&format=SafeTensor&size=full&fp=fp16"
+    # Not used by qwen-edit11-12 / Qwen-Edit-2512 workflows
+    #"https://civitai.com/api/download/models/798204?type=Model&format=SafeTensor&size=full&fp=fp16"
     # Add extra checkpoint model URLs here
     # Example:
     # "https://huggingface.co/.../model.safetensors"
@@ -145,71 +164,46 @@ UNET_MODELS=(
     "https://huggingface.co/lightx2v/Qwen-Image-Edit-2511-Lightning/resolve/main/qwen_image_edit_2511_fp8_e4m3fn_scaled_lightning.safetensors"
     "https://huggingface.co/Comfy-Org/Qwen-Image-Edit_ComfyUI/resolve/main/split_files/diffusion_models/qwen_image_edit_2511_fp8mixed.safetensors"
     "https://huggingface.co/Comfy-Org/Qwen-Image-Edit_ComfyUI/resolve/main/split_files/diffusion_models/qwen_image_edit_2511_bf16.safetensors"
+    # Qwen Image 2512 UNet GGUF for unsloth_qwen_image_2512.json (UnetLoaderGGUF)
+    "https://huggingface.co/unsloth/Qwen-Image-2512-GGUF/resolve/main/qwen-image-2512-Q4_K_M.gguf?download=true"
     # Add extra UNet model URLs here
 )
 
 LORA_MODELS=(
     
-    # Qwen Image Edit 2511 LoRAs
+    # Qwen Image Edit / Qwen Image 2512 LoRAs
     "https://huggingface.co/lightx2v/Qwen-Image-Edit-2511-Lightning/resolve/main/Qwen-Image-Edit-2511-Lightning-4steps-V1.0-fp32.safetensors"
+    "https://huggingface.co/lightx2v/Qwen-Image-Edit-2511-Lightning/resolve/main/Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors"
     "https://huggingface.co/DiffSynth-Studio/Qwen-Image-Edit-F2P/resolve/main/edit_0928_lora_step40000.safetensors"
+    "https://huggingface.co/lightx2v/Qwen-Image-2512-Lightning/resolve/main/Qwen-Image-2512-Lightning-4steps-V1.0-fp32.safetensors"
+    "https://huggingface.co/lightx2v/Qwen-Image-2512-Lightning/resolve/main/Qwen-Image-2512-Lightning-8steps-V1.0-fp32.safetensors"
+
+    # Not used by qwen-edit11-12 / Qwen-Edit-2512 workflows (kept commented)
     # WAN 2.2 Anime Cumshot Aesthetics (Civitai)
-    # Aesthetics_low
-    "https://civitai.com/api/download/models/2116027?type=Model&format=SafeTensor"
-    # Aesthetics_high
-    "https://civitai.com/api/download/models/2116008?type=Model&format=SafeTensor"
+    #"https://civitai.com/api/download/models/2116027?type=Model&format=SafeTensor"
+    #"https://civitai.com/api/download/models/2116008?type=Model&format=SafeTensor"
     # (wan 2.2 experimental) WAN General NSFW model - Wan Video 2.2 I2V-A14B
-    # generalnsfw_low
-    "https://civitai.com/api/download/models/2083303?type=Model&format=SafeTensor"
-    # generalnsfw_high
-    "https://civitai.com/api/download/models/2073605?type=Model&format=SafeTensor"
-    # WAN DR34M15H - Multi-perspective Missionary (POV+)
-    "https://civitai.com/api/download/models/1975021?type=Model&format=SafeTensor"
-    # WAN DR34ML4Y - All-In-One NSFW Wan Video 2.2 I2V-A14B
-    # DR34ML4Y_low
-    "https://civitai.com/api/download/models/2553271?type=Model&format=SafeTensor"
-    # DR34ML4Y_high
-    "https://civitai.com/api/download/models/2553151?type=Model&format=SafeTensor"
-    # F4C3SPL4SH Cumshot - I2V Wan 2.2 Video LoRa - K3NK
-    # F4C3SPL4SHlow
-    "https://civitai.com/api/download/models/2178869?type=Model&format=SafeTensor"
-    # F4C3SPL4SHhigh
-    "https://civitai.com/api/download/models/2176450?type=Model&format=SafeTensor"
-    # Cum/Facial - Wan2.2 Wan Video 2.2 I2V-A14B
-    # Cumfaciallow
-    "https://civitai.com/api/download/models/2460428?type=Model&format=SafeTensor"
-    # Cumfacialhigh
-    "https://civitai.com/api/download/models/2460386?type=Model&format=SafeTensor"
-    # K3NK 4llinOne - NSFW Helper - Wan 2.2 Video LoRa - K3NK
-    # 4llinOnelow
-    "https://civitai.com/api/download/models/2538990?type=Model&format=SafeTensor"
-    # 4llinOnehigh
-    "https://civitai.com/api/download/models/2484657?type=Model&format=SafeTensor"
-    # (Wan 2.2) Male finishing [Anime]
-    # Finishinglow
-    "https://civitai.com/api/download/models/2579518?type=Model&format=SafeTensor"
-    # Finishinghigh
-    "https://civitai.com/api/download/models/2579567?type=Model&format=SafeTensor"
-    # WAN 2.2 I2V - POV Body Cumshot & Pullout
-    # Pulloutlow
-    "https://civitai.com/api/download/models/2298928?type=Model&format=SafeTensor"
-    # Pullouthigh
-    "https://civitai.com/api/download/models/2298673?type=Model&format=SafeTensor"
-    # WAN 2.2 I2V - Orgasm / O-face
-    # Ofacelow
-    "https://civitai.com/api/download/models/2187757?type=Model&format=SafeTensor"
-    # Ofacehigh
-    "https://civitai.com/api/download/models/2187729?type=Model&format=SafeTensor"
-    # Orgasm LoRAs from civitaiarchive.com (no auth)
-    # orgasm_low
-    "https://civitaiarchive.com/api/download/models/2054796"
-    # orgasm_high
-    "https://civitaiarchive.com/api/download/models/2373145"
-    # ultimateBJ (Playtime-AI, HuggingFace)
-    # ultimateBJ_low
-    "https://huggingface.co/Playtime-AI/Wan2.2-Loras/resolve/main/Wan2.2%20-%20I2V%20-%20Blowjob%20-%20LOW%2014B.safetensors"
-    # ultimateBJ_high
-    "https://huggingface.co/Playtime-AI/Wan2.2-Loras/resolve/main/Wan2.2%20-%20I2V%20-%20Blowjob%20-%20HIGH%2014B.safetensors"
+    #"https://civitai.com/api/download/models/2083303?type=Model&format=SafeTensor"
+    #"https://civitai.com/api/download/models/2073605?type=Model&format=SafeTensor"
+    #"https://civitai.com/api/download/models/1975021?type=Model&format=SafeTensor"
+    #"https://civitai.com/api/download/models/2553271?type=Model&format=SafeTensor"
+    #"https://civitai.com/api/download/models/2553151?type=Model&format=SafeTensor"
+    #"https://civitai.com/api/download/models/2178869?type=Model&format=SafeTensor"
+    #"https://civitai.com/api/download/models/2176450?type=Model&format=SafeTensor"
+    #"https://civitai.com/api/download/models/2460428?type=Model&format=SafeTensor"
+    #"https://civitai.com/api/download/models/2460386?type=Model&format=SafeTensor"
+    #"https://civitai.com/api/download/models/2538990?type=Model&format=SafeTensor"
+    #"https://civitai.com/api/download/models/2484657?type=Model&format=SafeTensor"
+    #"https://civitai.com/api/download/models/2579518?type=Model&format=SafeTensor"
+    #"https://civitai.com/api/download/models/2579567?type=Model&format=SafeTensor"
+    #"https://civitai.com/api/download/models/2298928?type=Model&format=SafeTensor"
+    #"https://civitai.com/api/download/models/2298673?type=Model&format=SafeTensor"
+    #"https://civitai.com/api/download/models/2187757?type=Model&format=SafeTensor"
+    #"https://civitai.com/api/download/models/2187729?type=Model&format=SafeTensor"
+    #"https://civitaiarchive.com/api/download/models/2054796"
+    #"https://civitaiarchive.com/api/download/models/2373145"
+    #"https://huggingface.co/Playtime-AI/Wan2.2-Loras/resolve/main/Wan2.2%20-%20I2V%20-%20Blowjob%20-%20LOW%2014B.safetensors"
+    #"https://huggingface.co/Playtime-AI/Wan2.2-Loras/resolve/main/Wan2.2%20-%20I2V%20-%20Blowjob%20-%20HIGH%2014B.safetensors"
     # Add extra LoRA model URLs here
     # Example:
     # "https://civitai.com/api/download/models/..."
@@ -235,6 +229,8 @@ CONTROLNET_MODELS=(
 GGUF_MODELS=(
     # Qwen Image Edit 2511 GGUF model
     "https://huggingface.co/unsloth/Qwen-Image-Edit-2511-GGUF/resolve/main/qwen-image-edit-2511-Q8_0.gguf"
+    # Qwen2.5-VL CLIP GGUF for unsloth_qwen_image_2512.json (CLIPLoaderGGUF)
+    "https://huggingface.co/unsloth/Qwen2.5-VL-7B-Instruct-GGUF/resolve/main/Qwen2.5-VL-7B-Instruct-UD-Q4_K_XL.gguf?download=true"
     # Add extra GGUF model URLs here
 )
 
@@ -251,7 +247,7 @@ TEXT_ENCODER_MODELS=(
 # All other HF repos will download anonymously
 HF_AUTH_REPOS=(
     "Comfy-Org/Wan_2.2_ComfyUI_Repackaged"
-    "Playtime-AI/Wan2.2-Loras"
+    #"Playtime-AI/Wan2.2-Loras"
     # Add other private/gated HF repos here if needed
     # Example:
     # "SomeOrg/PrivateModel"
@@ -273,6 +269,26 @@ function provisioning_start() {
     provisioning_get_files \
         "${COMFYUI_DIR}/models/checkpoints" \
         "${CHECKPOINT_MODELS[@]}"
+    # SeedVR2 models used by Qwen-Edit-2511 upscale workflows
+    provisioning_download \
+        "https://huggingface.co/numz/SeedVR2_comfyUI/resolve/main/seedvr2_ema_7b_fp16.safetensors?download=true" \
+        "${COMFYUI_DIR}/models/checkpoints"
+    provisioning_download \
+        "https://huggingface.co/numz/SeedVR2_comfyUI/resolve/main/ema_vae_fp16.safetensors?download=true" \
+        "${COMFYUI_DIR}/models/vae"
+    # Qwen Rapid AIO checkpoints expected under models/checkpoints/Qwen
+    provisioning_download \
+        "https://huggingface.co/Phr00t/Qwen-Image-Edit-Rapid-AIO/resolve/main/v23/Qwen-Rapid-AIO-SFW-v23.safetensors?download=true" \
+        "${COMFYUI_DIR}/models/checkpoints/Qwen"
+    provisioning_download \
+        "https://huggingface.co/Phr00t/Qwen-Image-Edit-Rapid-AIO/resolve/main/v23/Qwen-Rapid-AIO-NSFW-v23.safetensors?download=true" \
+        "${COMFYUI_DIR}/models/checkpoints/Qwen"
+    provisioning_download \
+        "https://huggingface.co/Phr00t/Qwen-Image-Edit-Rapid-AIO/resolve/main/v19/Qwen-Rapid-AIO-SFW-v19.safetensors?download=true" \
+        "${COMFYUI_DIR}/models/checkpoints/Qwen"
+    provisioning_download \
+        "https://huggingface.co/Phr00t/Qwen-Image-Edit-Rapid-AIO/resolve/main/v19/Qwen-Rapid-AIO-NSFW-v19.safetensors?download=true" \
+        "${COMFYUI_DIR}/models/checkpoints/Qwen"
     provisioning_get_files \
         "${COMFYUI_DIR}/models/unet" \
         "${UNET_MODELS[@]}"
