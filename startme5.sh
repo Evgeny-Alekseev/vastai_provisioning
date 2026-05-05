@@ -25,6 +25,15 @@ NODES=(
     "https://github.com/chflame163/ComfyUI_LayerStyle"
     "https://github.com/city96/ComfyUI-GGUF"
     "https://github.com/Fannovel16/comfyui_controlnet_aux"
+    # Missing nodes in some workflows:
+    # - VRAMCleanup, RAMCleanup
+    "https://github.com/LAOGOU-666/Comfyui-Memory_Cleanup"
+    # - Qwen3_VQA
+    "https://github.com/IuvenisSapiens/ComfyUI_Qwen3-VL-Instruct"
+    # - ShowText|pysssss (and other utilities)
+    "https://github.com/pysssss/ComfyUI-Custom-Scripts"
+    # - ClownsharkSampler_Beta
+    "https://github.com/ClownsharkBatwing/RES4LYF"
     #"https://github.com/ltdrdata/ComfyUI-Manager"
     #"https://github.com/cubiq/ComfyUI_essentials"
 )
@@ -144,6 +153,8 @@ UNET_MODELS=(
     # Qwen Image 2512 diffusion — только bf16 (fp8 не качаем)
     #"https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/diffusion_models/qwen_image_2512_fp8_e4m3fn.safetensors"
     "https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/diffusion_models/qwen_image_2512_bf16.safetensors"
+    # Qwen Image 2512 UNet (GGUF) for Unet Loader (GGUF)
+    "https://huggingface.co/unsloth/Qwen-Image-2512-GGUF/resolve/main/qwen-image-2512-Q8_0.gguf"
     # Add extra UNet model URLs here
 )
 
