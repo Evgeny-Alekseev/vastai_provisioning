@@ -224,6 +224,11 @@ ESRGAN_MODELS=(
     # Add extra ESRGAN / upscaler model URLs here
 )
 
+UPSCALE_MODELS=(
+    # Qwen 2512 workflow note: put into ComfyUI/models/upscale_models
+    "https://huggingface.co/uwg/upscaler/resolve/main/ESRGAN/4x_NMKD-Siax_200k.pth?download=true"
+)
+
 CONTROLNET_MODELS=(
     # Qwen Image InstantX ControlNet
     "https://huggingface.co/Comfy-Org/Qwen-Image-InstantX-ControlNets/resolve/main/split_files/controlnet/Qwen-Image-InstantX-ControlNet-Union.safetensors"
@@ -287,6 +292,9 @@ function provisioning_start() {
     provisioning_get_files \
         "${COMFYUI_DIR}/models/esrgan" \
         "${ESRGAN_MODELS[@]}"
+    provisioning_get_files \
+        "${COMFYUI_DIR}/models/upscale_models" \
+        "${UPSCALE_MODELS[@]}"
     provisioning_get_files \
         "${COMFYUI_DIR}/models/gguf" \
         "${GGUF_MODELS[@]}"
