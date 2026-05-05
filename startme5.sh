@@ -325,6 +325,7 @@ function provisioning_get_pip_packages() {
 }
 
 function provisioning_get_nodes() {
+    local failures=0
     for repo in "${NODES[@]}"; do
         dir="${repo##*/}"
         path="${COMFYUI_DIR}/custom_nodes/${dir}"
@@ -332,19 +333,31 @@ function provisioning_get_nodes() {
         if [[ -d $path ]]; then
             if [[ ${AUTO_UPDATE,,} != "false" ]]; then
                 printf "Updating node: %s...\n" "${repo}"
-                ( cd "$path" && git pull )
+                if ! ( cd "$path" && GIT_TERMINAL_PROMPT=0 git pull ); then
+                    printf "ERROR: failed to update node: %s\n" "${repo}" 1>&2
+                    failures=$((failures + 1))
+                    continue
+                fi
                 if [[ -e $requirements ]]; then
                    pip install --no-cache-dir -r "$requirements"
                 fi
             fi
         else
             printf "Downloading node: %s...\n" "${repo}"
-            git clone "${repo}" "${path}" --recursive
+            if ! GIT_TERMINAL_PROMPT=0 git clone "${repo}" "${path}" --recursive; then
+                printf "ERROR: failed to download node: %s\n" "${repo}" 1>&2
+                failures=$((failures + 1))
+                continue
+            fi
             if [[ -e $requirements ]]; then
                 pip install --no-cache-dir -r "${requirements}"
             fi
         fi
     done
+    if [[ $failures -gt 0 ]]; then
+        printf "ERROR: %d node(s) failed to install/update. See logs above.\n" "$failures" 1>&2
+        return 1
+    fi
 }
 
 function provisioning_get_files() {
