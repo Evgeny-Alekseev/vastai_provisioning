@@ -249,6 +249,10 @@ CONTROLNET_MODELS=(
     # Add extra ControlNet model URLs here
 )
 
+ONNX_HUMAN_PARTS_MODELS=(
+    "https://huggingface.co/ZHO-ZHO-ZHO/LayerStyle_Potatools/resolve/main/human-parts/deeplabv3p-resnet50-human.onnx"
+)
+
 # GGUF models
 GGUF_MODELS=(
     # Qwen Image Edit 2511 GGUF model
@@ -308,6 +312,9 @@ function provisioning_start() {
     provisioning_get_files \
         "${COMFYUI_DIR}/models/controlnet" \
         "${CONTROLNET_MODELS[@]}"
+    provisioning_get_files \
+        "${COMFYUI_DIR}/models/onnx/human-parts" \
+        "${ONNX_HUMAN_PARTS_MODELS[@]}"
     provisioning_get_files \
         "${COMFYUI_DIR}/models/vae" \
         "${VAE_MODELS[@]}"
